@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,28 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hotel', function (Request $request) {
+
+    $token = uniqid(); 
+
+    session()->put('token', $token);
+
+    return session()->get('token');
+
+
+});
+
+
+Route::get('/about', function (Request $request) {  
+
+    $value = $request->session()->get('token');
+
+    dd($value);
+
+
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
