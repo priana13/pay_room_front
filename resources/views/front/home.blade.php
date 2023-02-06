@@ -14,8 +14,8 @@
     </div>
 
     <div style="background-image: url(./img/demo/bg_hero_section_top.png);" class="bg h-[270px] max-w-6xl mx-auto  bg-no-repeat bg-cover p-5">
-      <p class="text-3xl font-bold  pt-11 text-[#484848]">Mau cari kos ?</p>
-      <p class="text-xl text-gray-500">Dapatkan infonya dan langsung sewa di Key Pay Room.</p>
+      <p class="text-3xl font-bold  pt-11 text-[#484848]">Cari Tempat Menginap?</p>
+      <p class="text-xl text-gray-500">Dapatkan infonya dan langsung booking sekarang juga</p>
       <button id="sch-bottom" class="mt-5 text-sm text-gray-400 p-3 text-left w-80 shadow-costum1 rounded-md cari-btn">
         <i class="fa-solid fa-magnifying-glass"></i> Masukan nama lokasi/area/alamat
       </button>
@@ -54,30 +54,29 @@
     <div class="max-w-6xl mx-auto px-4 mt-20">
    
 
-      <div class="p-6 rounded-xl shadow-costum1  mt-16 mb-10">
-        <p class="font-bold text-2xl text-[#484848]">Kos Dikelola KeyPayRoom,Terjamin Nyaman</p>
+      <div class="p-6 rounded-xl shadow-costum1  mt-16">
+        <p class="font-bold text-2xl text-[#484848]">Hotel Dikelola KeyPayRoom, Terjamin Nyaman</p>
         <p class="text-gray-500 mt-3">Fast Response 24/7, Foto Properti Akurat, Foto Area & Informasi lengkap
       </div>
 
       {{-- list product --}}
-
       @livewire('product.list-product')
 
 
-      <!-- Testimoni -->
+      <!-- Testimoni -->     
       <div class="mt-5">
-        <a class="text-2xl font-semibold">Kata Pemilik Kost</a>
+        <a class="text-2xl font-semibold">Apa kata pelanggan?</a>
         <div class="swiper mySwiper-testimoni ">
           <div class="swiper-wrapper ">
             <div class="swiper-slide">
               <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
                 <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
                 <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Kos Putri Eksklusif MamiRooms Ayana, Depok, Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi kos Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan kos terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan kos, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari kos bisa menemukan kos Ayana dengan mudah.” 
+                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Sleman, Yogyakarta</p>
+                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
+                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
+                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
+                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
                 </p>
               </div>
             </div>
@@ -85,11 +84,11 @@
               <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
                 <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
                 <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Kos Putri Eksklusif MamiRooms Ayana, Depok, Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi kos Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan kos terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan kos, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari kos bisa menemukan kos Ayana dengan mudah.” 
+                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Depok, Sleman, Yogyakarta</p>
+                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
+                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
+                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
+                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
                 </p>
               </div>       
             </div>
@@ -97,11 +96,11 @@
               <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
                 <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
                 <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Kos Putri Eksklusif MamiRooms Ayana, Depok, Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi kos Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan kos terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan kos, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari kos bisa menemukan kos Ayana dengan mudah.” 
+                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Depok, Sleman, Yogyakarta</p>
+                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
+                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
+                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
+                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
                 </p>
               </div>        
             </div>
@@ -109,11 +108,11 @@
               <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
                 <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
                 <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Kos Putri Eksklusif MamiRooms Ayana, Depok, Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi kos Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan kos terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan kos, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari kos bisa menemukan kos Ayana dengan mudah.” 
+                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Ayana, Depok, Sleman, Yogyakarta</p>
+                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
+                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
+                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
+                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
                 </p>
               </div>       
             </div>
@@ -121,11 +120,11 @@
               <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
                 <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
                 <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Kos Putri Eksklusif MamiRooms Ayana, Depok, Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi kos Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan kos terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan kos, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari kos bisa menemukan kos Ayana dengan mudah.” 
+                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Depok, Sleman, Yogyakarta</p>
+                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
+                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
+                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
+                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
                 </p>
               </div>        
             </div>
@@ -133,487 +132,48 @@
           <div class="swiper-button-prev-testimoni"><i class="fa-solid fa-chevron-left"></i></div>
           <div class="swiper-button-next-testimoni"><i class="fa-solid fa-chevron-right"></i></div>
         </div>
-        <a class="px-8 py-3 bg-[#29af61] block max-w-md mx-auto text-center mt-5 text-white font-semibold rounded-md" href=""> Daftarka Kos Sekarang</a>  
+        <a class="px-8 py-3 bg-[#29af61] block max-w-md mx-auto text-center mt-5 text-white font-semibold rounded-md" href="">Booking Hotel Sekarang</a>  
       </div>
 
-      <!-- Swiper card 2 -->
-      <div class="grid lg:grid-cols-2  mt-14">
-        <div class="mt-2">
-          <a class="text-2xl font-semibold">Promo Ngebut</a>&nbsp;
-          <select class="text-2xl focus:outline-none text-[#29af61] font-semibold border-b-2" name="" id="">
-            <option value="">Semua Kota</option>
-            <option value="">Jakata Selatan</option>
-            <option value="">Bogor </option>
-          </select>
-        </div>
-        
-        <div class="flex lg:justify-end mt-2">
-          <a href="" class="py-1.5 px-3 border rounded-md ">
-            Lihat Semua
-          </a>
-          <p class="text-3xl text-gray-300 mb-2 mx-4">|</p>
-          <div class="btn__navigation ">
-            <div class="swiper-button-prev-card2"><i class="fa-solid fa-chevron-left"></i></div>&emsp;
-            <div class="swiper-button-next-card2"><i class="fa-solid fa-chevron-right"></i></div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper mySwiper-card2">
-        <div class="swiper-wrapper ">
-          <div class="swiper-slide">
-            <div class="grid lg:grid-cols-4 grid-cols-2 text-center gap-2 mt-3">
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-          <div class="grid lg:grid-cols-4 grid-cols-2 text-center gap-2 mt-3">
-            <button class="text-left mx-auto"  onclick="location.href='#'">
-              <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                <div class="text-sm mt-1">
-                  
-                </div>
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-            </div>   
-          </div>  
-        </div>
-      </div>  
+      {{-- list product --}}
+      @livewire('product.list-product')
 
-      <!-- Swiper card 3 -->
-      <div class="grid lg:grid-cols-2  mt-14">
-        <div class="mt-2">
-          <a class="text-2xl font-semibold">Promo Ngebut</a>&nbsp;
-          <select class="text-2xl focus:outline-none text-[#29af61] font-semibold border-b-2" name="" id="">
-            <option value="">Semua Kota</option>
-            <option value="">Jakata Selatan</option>
-            <option value="">Bogor </option>
-          </select>
-        </div>
-        
-        <div class="flex lg:justify-end mt-2">
-          <a href="" class="py-1.5 px-3 border rounded-md ">
-            Lihat Semua
-          </a>
-          <p class="text-3xl text-gray-300 mb-2 mx-4">|</p>
-          <div class="btn__navigation ">
-            <div class="swiper-button-prev-card3"><i class="fa-solid fa-chevron-left"></i></div>&emsp;
-            <div class="swiper-button-next-card3"><i class="fa-solid fa-chevron-right"></i></div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper mySwiper-card3">
-        <div class="swiper-wrapper ">
-          <div class="swiper-slide">
-            <div class="grid lg:grid-cols-4 grid-cols-2 text-center gap-2 mt-3">
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                <div class="text-sm mt-1">
-                    <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> 20%</a>
-                    <a class="text-gray-400 line-through">Rp1.090.000</a>
-                </div>
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                <div class="text-sm mt-1">
-                    <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> 20%</a>
-                    <a class="text-gray-400 line-through">Rp1.090.000</a>
-                </div>
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                <div class="text-sm mt-1">
-                    <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> 20%</a>
-                    <a class="text-gray-400 line-through">Rp1.090.000</a>
-                </div>
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                <div class="text-sm mt-1">
-                    <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> 20%</a>
-                    <a class="text-gray-400 line-through">Rp1.090.000</a>
-                </div>
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-          <div class="grid lg:grid-cols-4 grid-cols-2 text-center gap-2 mt-3">
-            <button class="text-left mx-auto"  onclick="location.href='#'">
-              <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                <div class="text-sm mt-1">
-                    <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> 20%</a>
-                    <a class="text-gray-400 line-through">Rp1.090.000</a>
-                </div>
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                <div class="text-sm mt-1">
-                    <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> 20%</a>
-                    <a class="text-gray-400 line-through">Rp1.090.000</a>
-                </div>
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                <div class="text-sm mt-1">
-                    <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> 20%</a>
-                    <a class="text-gray-400 line-through">Rp1.090.000</a>
-                </div>
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-              <button class="text-left mx-auto"  onclick="location.href='#'">
-                <div class="font-semibold max-w-[265px]">
-                  <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
-                  <div class="mt-3">      
-                    <a class="py-1 px-2 text-sm border rounded-md ">Campur</a>&nbsp;
-                    <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
-                  </div>
-                  <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
-                    Kost Apik Siwalankerto Permai H24 Tipe A Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-sm mt-1 ">
-                    Wonocolo Surabaya
-                  </p>
-                  <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                    K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
-                </p>
-                <div class="text-sm mt-1">
-                    <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> 20%</a>
-                    <a class="text-gray-400 line-through">Rp1.090.000</a>
-                </div>
-                <div class="text-[#303030]">
-                <a >Rp872.000</a><a class="text-sm">/ bulan</a> 
-                </div>
-                </div>
-              </button>
-            </div>   
-          </div>
-          
-        </div>
-      </div> 
+      {{-- list product --}}
+      @livewire('product.list-product')
+
+
       <div class="mt-5">
-        <p class="text-2xl font-semibold">Area Kos Populer</p>
+        <p class="text-2xl font-semibold">Area Hotel Populer</p>
         <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 mt-3">
             <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/jogja.png');" >
                 <a href="">Jogjakarta</a>
             </div>
-            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/jogja.png');" >
-              <a href="">Jogjakarta</a>
+            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/jakarta.png');" >
+              <a href="">Jakarta</a>
             </div>
-            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/jogja.png');" >
-              <a href="">Jogjakarta</a>
+            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/bandung.png');" >
+              <a href="">Bandung</a>
             </div>
-            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/jogja.png');" >
-              <a href="">Jogjakarta</a>
+            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/surabaya.png');" >
+              <a href="">Surabaya</a>
             </div>
-            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/jogja.png');" >
-              <a href="">Jogjakarta</a>
+            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/medan.png');" >
+              <a href="">Medan</a>
             </div>
-            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/jogja.png');" >
-              <a href="">Jogjakarta</a>
+            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/malang.png');" >
+              <a href="">Malang</a>
             </div>
-            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/jogja.png');" >
-              <a href="">Jogjakarta</a>
+            <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-white" style="background-image: url('https://mamikos.com/assets/area/desktop/semarang.png');" >
+              <a href="">Semarang</a>
             </div>
             <div class="bg-cover bg-center w-full h-40 rounded-lg flex justify-center items-center text-2xl font-semibold text-black bg-white"  >
               <a href="">Lihat Semua</a>
             </div>
         </div>
       </div>
-      <div class="mt-5">
+
+
+      <div class="mt-5 hidden">
         <p class="text-2xl font-semibold">Area Kos Sekita Kampus</p>
         <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 mt-3">
             <button onclick="location.href='#'"  class="w-full h-28 rounded-lg flex justify-center items-center  font-semibold text-black border" >
@@ -634,54 +194,18 @@
 
     <!-- info -->
     <div class="bg-gray-100 p-7 mt-8">
-        <p class="columns-2">
-          KeyPayRoom - Aplikasi Anak Kos No. 1 di Indonesia
+      <h3 class="text-2xl font-semibold mb-3">Pesan Hotel Murah di Indonesia</h3> <br>
+      <p class="columns-1">
+        KeyPayRoom - Aplikasi Anak hotel No. 1 di Indonesia <br>
 
-          KeyPayRoom memanfaatkan teknologi untuk berkembang dari aplikasi cari kos menjadi aplikasi yang memudahkan calon anak kos untuk booking properti kos dan juga melakukan pembayaran kos. Saat ini kami memiliki lebih dari 2 juta kamar kos yang tersebar di lebih dari 140 kota di seluruh Indonesia. KeyPayRoom juga menyediakan layanan manajemen properti, bernama Singgahsini dan Apik, untuk menjawab kebutuhan calon penghuni yang menginginkan kos eksklusif atau kos murah. KeyPayRoom berusaha untuk bisa terus menyajikan daftar rumah kos dengan data ketersediaan kamar yang akurat, fasilitas kos terperinci, dilengkapi dengan foto serta detail harga kos, dan kemudahan survei via fitur virtual tour agar calon penghuni mendapatkan kenyamanan dalam proses pencarian dan booking kos.
+        KeyPayRoom memanfaatkan teknologi untuk berkembang dari aplikasi cari hotel menjadi aplikasi yang memudahkan calon anak hotel untuk booking properti hotel dan juga melakukan pembayaran hotel. Saat ini kami memiliki lebih dari 2 juta kamar hotel yang tersebar di lebih dari 140 kota di seluruh Indonesia. KeyPayRoom juga menyediakan layanan manajemen properti, bernama Singgahsini dan Apik, untuk menjawab kebutuhan calon penghuni yang menginginkan hotel eksklusif atau hotel murah. KeyPayRoom berusaha untuk bisa terus menyajikan daftar rumah hotel dengan data ketersediaan kamar yang akurat, fasilitas hotel terperinci, dilengkapi dengan foto serta detail harga hotel, dan kemudahan survei via fitur virtual tour agar calon penghuni mendapatkan kenyamanan dalam proses pencarian dan booking hotel. <br>
 
-            Untuk memberikan perlindungan bagi para anak kos selama pandemi, KeyPayRoom menghadirkan Kos Higienis. Kos Higienis merupakan kos dengan konsep yang menerapkan pelaksanaan standar protokol kesehatan, seperti disinfeksi kamar, jaga jarak, penggunaan masker, dan swab antigen untuk kamu saat akan mulai ngekos nanti.
+        Untuk memberikan perlindungan bagi para anak hotel selama pandemi, KeyPayRoom menghadirkan hotel Higienis. hotel Higienis merupakan hotel dengan konsep yang menerapkan pelaksanaan standar protokol kesehatan, seperti disinfeksi kamar, jaga jarak, penggunaan masker, dan swab antigen untuk kamu saat akan mulai ngehotel nanti.
 
-            Fitur yang dapat dimanfaatkan di KeyPayRoom
 
-            Fitur Pencarian
-
-            Di kolom pencarian, kamu bisa cari kos di sekitarmu atau kos di seluruh daerah di Indonesia dengan memasukkan keyword, seperti kos dekat Kampus/Universitas di masing-masing kota, cari kos di Jogja, Depok, Jakarta, Surabaya, Bandung, dan kota besar lainnya atau cari kos di sekitar lokasi saya saat ini.
-
-            Filter Pencarian
-
-            Cari kos berdasarkan fasilitas kos yang kamu mau, lebih mudah dengan filter berdasarkan Kos AC, Kos Kamar mandi dalam, Kos Wifi. Bisa juga pilih kos dengan tipe kos, mulai dari Kos Harian, Kos Bulanan hingga Kos Tahunan. Mau cari Kos Bebas, Kos Pasutri, Kos Putra, Kos Putri, Kos Campur juga bisa.
-
-            Chat dengan Penyewa
-
-            Terhubung langsung dengan pemilik kos dan bisa bertanya lebih lanjut mengenai info kos melalui fitur chat di KeyPayRoom.
-
-            Booking Langsung
-
-            Bisa langsung mengajukan sewa kos di aplikasi atau website KeyPayRoom. Bahkan, kamu bisa mulai sewa kos dari 3 bulan sebelum masuk kosan. Transaksi lebih aman, tanpa takut kamarnya penuh keduluan orang lain.
-
-            Virtual Tour
-
-            Virtual Tour KeyPayRoom adalah media foto lingkungan kos dalam 360° yang diperuntukkan untuk kamu, para pencari kos, agar dapat mengetahui kondisi lingkungan kos secara detail tanpa harus survei langsung. Fitur ini cocok jadi andalanmu yang butuh kosan tapi tidak punya waktu untuk survei langsung, karena fitur ini menampilkan keadaan kos secara lengkap dari berbagai sudut.
-
-            Pembayaran via KeyPayRoom
-
-            Bayar kosan anti ribet, cashless, dan jaminan aman, dengan beragam pilihan metode pembayaran. Nikmati promo-promo menarik yang diselenggarakan secara berkala untuk membantu kamu ngekos lebih hemat.
-
-            MamiPoin
-
-            Sebagai wujud terima kasih, KeyPayRoom menghadirkan program loyalti melalui MamiPoin. Anak kos bisa mendapatkan poin sebagai cashback setiap melakukan pembayaran kos dan dapat dikumpulkan untuk digunakan sebagai tambahan diskon di pembayaran kos selanjutnya. Pemilik kos juga akan mendapatkan MamiPoin setiap melakukan aktivitas di KeyPayRoom dan dapat dikumpulkan untuk ditukar menjadi beragam hadiah menarik atau tambahan diskon di pembayaran paket KeyPayRoom GoldPlus.
-
-            Kos Review
-
-            Lihat review dari para penghuni kos agar kamu semakin yakin untuk sewa kos. Kamu juga bisa tulis pengalaman kamu selama ngekos untuk menambah info kos tersebut.
-
-            Favorit
-
-            Ketemu dengan kos idaman, bisa disimpan 
-            dulu melalui fitur favorit kos. Kos yang sudah
-            kamu simpan, dapat kamu booking di kemudian hari.
-        </p>
+      </p>
     </div>
+
     <br>
 
     @include('layouts.cari')

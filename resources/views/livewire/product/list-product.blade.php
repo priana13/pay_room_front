@@ -1,4 +1,4 @@
-<div>
+<div class="mt-14">
           <!-- Swiper card 1 -->
           <div class="grid lg:grid-cols-[38%_0%_7%_21%_34%]">
             <div class="mt-2">
