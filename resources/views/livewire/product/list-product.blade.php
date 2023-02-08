@@ -58,7 +58,7 @@
 
                 @foreach ($hotel as $item)                   
 
-                    <button class="text-left mx-auto"  onclick="location.href='#'">
+                    <button class="text-left mx-auto"  onclick="location.href='{{ route('front.hotel' , $item['slug'])  }}'">
                         <div class="font-semibold max-w-[265px]">
                          
                         @if($item['thumbnail'] != null)
