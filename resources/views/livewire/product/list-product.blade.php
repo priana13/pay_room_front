@@ -56,11 +56,21 @@
               <div class="swiper-slide">
                 <div class="grid lg:grid-cols-4 grid-cols-2 text-center gap-2 mt-3">
 
-                @foreach ($hotel as $item)                
+                @foreach ($hotel as $item)                   
 
-                    <button class="text-left mx-auto"  onclick="location.href='{{ route('front.hotel',$item['slug'] ) }}'">
+                    <button class="text-left mx-auto"  onclick="location.href='#'">
                         <div class="font-semibold max-w-[265px]">
-                        <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
+                         
+                        @if($item['thumbnail'] != null)
+
+                        <img class="w-[265px] h-[150px] rounded-xl object-cover" src="{{ $item['thumbnail'] }}" alt="">
+
+                        @else
+
+                        <img class="w-[265px] h-[150px] rounded-xl object-cover" src="{{ asset('storage/sample.jpg') }}" alt="">
+
+                        @endif
+
                         <div class="mt-3">      
                             <a class="py-1 px-2 text-sm border rounded-md ">{{ $item['house_gender'] }}</a>&nbsp;
                             <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
