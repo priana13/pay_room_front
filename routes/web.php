@@ -17,7 +17,12 @@ use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('front.home');
-});
+})->name('front.home_page');
+
+Route::get('/hotel/{slug}', function ($slug) {
+    return view('front.detail', compact('slug'));
+})->name('front.hotel');
+
 
 // Route::get('/hotel', function (Request $request) {
 //     $token = uniqid(); 
