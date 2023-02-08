@@ -32,83 +32,13 @@
       <div class="p-6 rounded-xl shadow-costum1  mt-16">
         <p class="font-bold text-2xl text-[#484848]">Hotel Dikelola KeyPayRoom, Terjamin Nyaman</p>
         <p class="text-gray-500 mt-3">Fast Response 24/7, Foto Properti Akurat, Foto Area & Informasi lengkap
-      </div>
+      </div>      
 
       {{-- list product --}}
       @livewire('product.list-product')
 
-
-      <!-- Testimoni -->     
-      <div class="mt-5">
-        <a class="text-2xl font-semibold">Apa kata pelanggan?</a>
-        <div class="swiper mySwiper-testimoni ">
-          <div class="swiper-wrapper ">
-            <div class="swiper-slide">
-              <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
-                <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
-                <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
-                <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
-                <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Depok, Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
-                </p>
-              </div>       
-            </div>
-            <div class="swiper-slide">
-              <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
-                <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
-                <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Depok, Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
-                </p>
-              </div>        
-            </div>
-            <div class="swiper-slide">
-              <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
-                <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
-                <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Ayana, Depok, Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
-                </p>
-              </div>       
-            </div>
-            <div class="swiper-slide">
-              <div class="shadow-md px-10 py-5 max-w-[390px] rounded-md">
-                <img src="https://static.mamikos.com/uploads/cache/data/style/2020-02-19/qXe2nVg5-240x320.jpg" class="w-14 h-14 object-cover rounded-full float-left" alt="">
-                <p class="ml-20 font-semibold">Fathur bagus Septian</p>
-                <p class="ml-20 text-sm italic text-gray-400 leading-[16px] mt-1">Depok, Sleman, Yogyakarta</p>
-                <p class="text-sm text-gray-500 mt-4 leading-6 ">“Saya mempercayakan urusan promosi hotel Ayana kepada KeyPayRoom sebagai aplikasi penyedia 
-                  layanan hotel terbesar di Indonesia. Jujur saja, saya sangat terbantu sekali dari segi 
-                  marketing, operasional, perawatan bangunan hotel, dan lainnya. Apalagi terdapat fitur Premium di 
-                  aplikasi KeyPayRoom yang membuat pencari hotel bisa menemukan hotel Ayana dengan mudah.” 
-                </p>
-              </div>        
-            </div>
-          </div>
-          <div class="swiper-button-prev-testimoni"><i class="fa-solid fa-chevron-left"></i></div>
-          <div class="swiper-button-next-testimoni"><i class="fa-solid fa-chevron-right"></i></div>
-        </div>
-        <a class="px-8 py-3 bg-[#29af61] block max-w-md mx-auto text-center mt-5 text-white font-semibold rounded-md" href="">Booking Hotel Sekarang</a>  
-      </div>
+      {{-- testimoni --}}
+      @livewire('review-component')
 
       {{-- list product --}}
       @livewire('product.list-product')

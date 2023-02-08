@@ -6,8 +6,7 @@
              {{$company['bio']}}
             </p>
             <div class="flex  mt-5">
-            <img class="w-32 " src="https://mamikos.com/general/img/pictures/download_gplay.png" alt="">
-            <img class="w-32 ml-3" src="https://mamikos.com/general/img/pictures/download_gplay.png" alt="">
+            <img class="w-32 " src="storage/download_gplay.png" alt="">           
             </div>   
         </div>
         <div>
