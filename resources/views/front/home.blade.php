@@ -23,33 +23,8 @@
     </div>
 
     <br>
-    <div class="max-w-6xl mx-auto px-1">
-      <div class="swiper mySwiper ">
-        <div class="swiper-wrapper ">
-          <div class="swiper-slide ">
-            <a class="banner" href="">          
-              <img src="{{asset('storage/banner/banner1.jpg')}}" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a class="banner" href="">          
-              <img src="{{asset('storage/banner/banner2.jpg')}}" alt="">
-            </a>        
-          </div>
-          <div class="swiper-slide">
-            <a class="banner" href="">          
-              <img src="{{asset('storage/banner/banner3.jpg')}}" alt="">
-            </a>        
-          </div>
-       
-        </div>
-      </div>
-      <div class="btn__navigation mt-10">
-        <div class="swiper-button-prev "><i class="fa-solid fa-chevron-left"></i></div>
-          <a class="navigation-link" href="">Lihat semua promo</a>
-        <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
-      </div>
-    </div>
+
+    @livewire('banner-utama')
 
     <div class="max-w-6xl mx-auto px-4 mt-20">
    
@@ -210,7 +185,7 @@
 
     @include('layouts.cari')
     
-    @include('layouts.footer')
+    @livewire('footer')
     
   
 @endsection

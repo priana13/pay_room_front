@@ -11,8 +11,9 @@ class ListProduct extends Component
 
     public function render()
     {
+        $url = config('services.api_url');       
 
-        $response = Http::get('https://demo.keypayroom.co.id/api/houses');
+        $response = Http::get($url . '/houses');
         $response = $response->collect();
 
         $data = collect($response['data']) ;
