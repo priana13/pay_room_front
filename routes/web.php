@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SingleProductController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -15,13 +17,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    return view('front.home');
-})->name('front.home_page');
+Route::get('/', [HomeController::class, 'index'])->name('front.home_page');
 
-Route::get('/hotel/{slug}', function ($slug) {
-    return view('front.detail', compact('slug'));
-})->name('front.hotel');
+Route::get('/hotel/{slug}', [SingleProductController::class, 'index'])->name('front.hotel');
+
+Route::view('/login', 'front.login')->name('login');
+Route::view('/register', 'front.register')->name('register');
+
 
 
 // Route::get('/hotel', function (Request $request) {
