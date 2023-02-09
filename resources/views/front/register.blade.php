@@ -1,4 +1,4 @@
-@extends('template.component.layout')
+@extends('layouts.guest')
 @section('custom_header')
 
 <style>
@@ -7,14 +7,14 @@
 </style>
 @endsection
 @section('content')
-  @include('template.component.navbar1')
+  @include('layouts.navbar1')
 
 
   <br>
   <div class="max-w-lg mx-auto px-2">
-    <div id="pilihan" class="p-6 rounded-xl mt-7  shadow-costum1 ">
+    <div id="pilihan" class="p-6 rounded-xl mt-7  shadow-costum1 hidden ">
         <button class="text-2xl text-gray-500"><i class="fa-solid fa-x"></i></button>
-        <p class="text-xl font-semibold mt-5">Daftar ke Mamikos</p><br>
+        <p class="text-xl font-semibold mt-5">Daftar</p><br>
         <p>Saya ingin Daftar Sebagai</p>
         <button id="pencari" class="felx items-center shadow-costum1 p-5 w-full text-left rounded-xl mt-8 btn">
             <p class="text-xl font-semibold"><i class="fa-solid fa-door-open text-3xl"></i>&emsp; Pencari Kos</p>
@@ -24,9 +24,9 @@
         </button>
     </div>
 
-    <div id="pemilik-daftar" class="p-6 rounded-xl hidden  mt-7 shadow-costum1 login">
-      <button class="text-2xl text-gray-500 kembali"><i class="fa-solid fa-arrow-left"></i></button>
-      <p class="text-xl font-semibold mt-5">Daftar Pemilik Kos</p><br>
+    <div id="pemilik-daftar" class="p-6 rounded-xl  mt-7 shadow-costum1 login">
+      <a class="text-2xl text-gray-500 kembali" href="{{ route('front.home_page') }}"><i class="fa-solid fa-arrow-left"></i></a>
+      <p class="text-xl font-semibold mt-5">Register New Account</p><br>
       
       <p>Nama</p>
       <input type="text" class="border-b focus:outline-none  border-[#ADADAD] w-full mt-2" placeholder="Nomor Handphone" name="" id="">
@@ -56,11 +56,11 @@
       <button class="w-full py-3 bg-[#29af61] text-white font-semibold">
         Daftar
       </button>
-       <p class="text-center text-sm mt-3">Belum punya akun ? <a class="text-[#29af61]" href="">Daftar Sekarang</a></p>
-        <a class="block text-center text-sm text-[#29af61] mt-3" href="">Lupa Password</a>
+       <p class="text-center text-sm mt-3">sign in to your account <a class="text-[#29af61]" href="">Login</a></p>
+        <a class="block text-center text-sm text-[#29af61] mt-3" href="">Forgot Password</a>
     </div>
 
-    <div id="pencari-daftar" class="p-6 rounded-xl hidden mt-7 shadow-costum1 login">
+    {{-- <div id="pencari-daftar" class="p-6 rounded-xl hidden mt-7 shadow-costum1 login">
       <button class="text-2xl text-gray-500 kembali"><i class="fa-solid fa-arrow-left"></i></button>
       <p class="text-xl font-semibold mt-5">Daftar Pencari</p><br>
 
@@ -92,9 +92,9 @@
       <button class="w-full py-3 bg-[#29af61] text-white font-semibold">
         Daftar
       </button>
-       <p class="text-center text-sm mt-3">Belum punya akun ? <a class="text-[#29af61]" href="">Daftar Sekarang</a></p>
+       <p class="text-center text-sm mt-3">sign in to your account <a class="text-[#29af61]" href="{{ route('login') }}">Login Now</a></p>
         <a class="block text-center text-sm text-[#29af61] mt-3" href="">Lupa Password</a>
-    </div>
+    </div> --}}
   </div>
   <br>
   <br> <br> 
@@ -104,16 +104,16 @@
   @section('footer')
 
     <script>
-      $('.btn').on('click', function(e) {
-        $("#pilihan").hide();
-        $("#"+this.id+'-daftar').show(); 
-      });
+      // $('.btn').on('click', function(e) {
+      //   $("#pilihan").hide();
+      //   $("#"+this.id+'-daftar').show(); 
+      // });
 
-      $('.kembali').on('click', function(e) {
-        $("#pilihan").show();
-        $(".login").hide();
+      // $('.kembali').on('click', function(e) {
+      //   $("#pilihan").show();
+      //   $(".login").hide();
 
-      });
+      // });
 
   $(document).ready(function() {
     $("#show_hide_password button").on('click', function(event) {
