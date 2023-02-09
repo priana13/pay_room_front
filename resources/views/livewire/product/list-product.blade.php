@@ -72,7 +72,7 @@
                         @endif
 
                         <div class="mt-3">      
-                            <a class="py-1 px-2 text-sm border rounded-md ">{{ $item['house_gender'] }}</a>&nbsp;
+                            <a class="py-1 px-2 text-sm border rounded-md ">{{ $item['bed'] }}</a>&nbsp;
                             <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
                         </div>
                         <p class="line-clamp-1 text-sm mt-3 text-[#303030]">

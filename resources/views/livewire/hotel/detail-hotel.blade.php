@@ -46,7 +46,7 @@
         </div>
         <p class="text-2xl font-bold text-[#383746] my-5">{{ $hotel['title'] }}</p>
         <div class="lg:flex grid grid-cols-[30%_60%]">
-          <p class="border px-2 py-1 rounded-md font-semibold">{{ $hotel['house_gender'] }}</p>
+          <p class="border px-2 py-1 rounded-md font-semibold">{{ $hotel['bed'] }}</p>
           <p class=" px-2 py-1 font-semibold ml-3 flex"><i class="fa-solid fa-location-dot mt-0.5"></i> &nbsp;{{ $hotel['kota'] }}  </p>
           <p class=" px-2 py-1 font-semibold ml-3"><i class="fa-solid fa-star"></i> 4.8 <a class="font-medium text-gray-400">(10)</a></p>
           <p class=" px-2 py-1 text-gray-500 ml-3"><i class="fa-solid fa-money-bill"></i> {{ $hotel['branch']['name'] }}</p>
