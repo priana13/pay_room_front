@@ -39,9 +39,9 @@
           <button class="h-full  hover:border-b-[3px] border-[#29af61] px-3 font-bold">
             Syarat dan Ketentuan
           </button>
-          <button class="py-2  border border-[#29af61] text-[#29af61] px-4 rounded-md font-semibold ">
+          <a href="{{ route('login') }}" class="py-2  border border-[#29af61] text-[#29af61] px-4 rounded-md font-semibold ">
             Masuk
-          </button>
+          </a>
         </div>
         <div class="text-right  lg:hidden ">
             <button class="rounded-lg py-1 px-2 border text-lg mt-1 btn-menu">

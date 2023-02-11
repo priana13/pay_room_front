@@ -73,7 +73,7 @@ class RegisterComponent extends Component
 
         session()->put('app_token', $token);
 
-        Redirect::route('profile');            
+        Redirect::route('my-dashboard');            
 
       }
     
