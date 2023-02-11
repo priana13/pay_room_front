@@ -24,8 +24,14 @@ Route::get('/hotel/{slug}', [SingleProductController::class, 'index'])->name('fr
 Route::view('/login', 'front.login')->name('login');
 Route::view('/register', 'front.register')->name('register');
 
-Route::view('profile', 'livewire.member.profile_page')->name('profile');
-Route::view('my-dashboard', 'livewire.member.my-dashboard')->name('my-dashboard');
+Route::middleware(['auth-api'])->group(function(){
+
+   Route::view('profile', 'livewire.member.profile_page')->name('profile');
+   Route::view('my-dashboard', 'livewire.member.my-dashboard')->name('my-dashboard');
+
+
+});
+
 
 
 Route::get('produk', function(){
