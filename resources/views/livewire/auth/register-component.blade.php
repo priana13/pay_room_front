@@ -3,6 +3,14 @@
 
     <div id="pemilik-daftar" class="p-6 rounded-xl  mt-2 shadow-costum1 login">
       <p class="text-xl font-semibold mt-5">Register New Account</p><br>
+
+      <div>
+          @if (session()->has('message'))
+              <div class="text-red-500">
+                  {{ session('message') }}
+              </div>
+          @endif
+      </div>
       
       <p>Name</p>
       <input type="text" class="border-b focus:outline-none  border-[#ADADAD] w-full mt-0" placeholder="Name" wire:model="name" id="">
@@ -17,6 +25,16 @@
       <p>Email</p>
       <input type="text" class="border-b focus:outline-none  border-[#ADADAD] w-full mt-0" placeholder="Email" wire:model="email" id="">
       @error('email') <span class="text-red-500">{{ $message }} </span> @enderror
+
+      <div>
+        @if (session()->has('email'))
+            <div class="text-red-500">
+                {{ session('email') }}
+            </div>
+        @endif
+      </div>
+
+
       <br><br>
       <p>Password</p>
       <div id="show_hide_password" class="relative rounded-md shadow-sm">

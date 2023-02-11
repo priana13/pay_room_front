@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Auth;
 
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Redirect;
 
 class RegisterComponent extends Component
 {
@@ -19,7 +20,7 @@ class RegisterComponent extends Component
     }
 
 
-    public function register (){
+    public function register(){
 
         $this->validate([
             'name' => 'required',
@@ -31,17 +32,52 @@ class RegisterComponent extends Component
 
         $url = config('services.api_url');       
 
-        $response = Http::post($url . '/register'); 
-
         $response = Http::withHeaders([
                         'Accept' => 'application/json'           
                     ])->post($url . '/register', [
                         'name' =>  $this->name,
                         'email' => $this->email,
+                        'phone_number' => $this->phone_number,
                         'password' => $this->password
                     ]);
 
-        dd($response['data']);        
+     
+
+      $response->onError(function($response){
+
+        $data = $response->collect();       
+        
+        if( isset($data['errors']['email']) ){
+
+            session()->flash('email', $data['message']);
+
+        }else{
+
+            session()->flash('message', $data['message']);
+
+
+        }
+
+
+
+      });    
+      
+      
+      if($response->successful()){
+
+        $data = $response->collect();
+
+        $user = $data['user'];
+
+        $token = $data['token'];
+
+        session()->put('app_token', $token);
+
+        Redirect::route('profile');            
+
+      }
+    
+
 
     }
 }

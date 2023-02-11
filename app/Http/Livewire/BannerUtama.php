@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class BannerUtama extends Component
 {
-    public $banners;
+    public $banners  = [];
 
     public function render()
     {
@@ -15,11 +15,18 @@ class BannerUtama extends Component
         $url = config('services.api_url');       
 
         $response = Http::get($url . '/banners');
-        $response = $response->collect();
+        $response = $response->collect(); 
+      
 
-        $data = collect($response['data']) ;
+        if(count($response) > 0){
 
-        $this->banners = $data->take(4);
+            $data = collect($response['data']) ;
+
+            $this->banners = $data->take(4);
+
+        }
+
+       
 
         /**
          *  "image" => "https://app.keypayroom.co.id/storage/banner/banner1.jpg"

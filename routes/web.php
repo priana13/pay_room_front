@@ -24,6 +24,26 @@ Route::get('/hotel/{slug}', [SingleProductController::class, 'index'])->name('fr
 Route::view('/login', 'front.login')->name('login');
 Route::view('/register', 'front.register')->name('register');
 
+Route::get('profile', function(){
+
+     if( session()->get('app_token') ){
+
+        return 'halaman profile';
+
+     }else{
+
+        return redirect()->route('login');
+     }
+
+})->name('profile');
+
+
+Route::get('produk', function(){
+
+    dd( session()->get('app_token') ); 
+
+})->name('produk');
+
 
 
 // Route::get('/hotel', function (Request $request) {
