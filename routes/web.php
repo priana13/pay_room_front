@@ -21,17 +21,17 @@ Route::get('/', [HomeController::class, 'index'])->name('front.home_page');
 
 Route::get('/hotel/{slug}', [SingleProductController::class, 'index'])->name('front.hotel');
 
-Route::view('/login', 'front.login')->name('login');
-Route::view('/register', 'front.register')->name('register');
+Route::middleware(['api-guest'])->group(function(){
+   Route::view('/login', 'front.login')->name('login');
+   Route::view('/register', 'front.register')->name('register');
+});
+
 
 Route::middleware(['auth-api'])->group(function(){
-
    Route::view('profile', 'livewire.member.profile_page')->name('profile');
    Route::view('my-dashboard', 'livewire.member.my-dashboard')->name('my-dashboard');
 
-
 });
-
 
 
 Route::get('produk', function(){
