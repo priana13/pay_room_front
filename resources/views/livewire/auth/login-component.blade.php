@@ -1,6 +1,6 @@
 
   <div class="max-w-lg mx-auto px-2">
-    <div id="pilihan" class="p-6 rounded-xl mt-7 hidden  shadow-costum1 ">
+    <div id="pilihan" class="p-6 rounded-xl mt-2 hidden  shadow-costum1 ">
         {{-- <button class="text-2xl text-gray-500"><i class="fa-solid fa-x"></i></button> --}}
         <p class="text-xl font-semibold mt-5">Masuk ke Key Pay Room</p><br>
         <p>Saya Login Masuk Sebagai</p>
@@ -12,14 +12,14 @@
         </button>
     </div>
 
-    <div id="pemilik-login" class="p-6 rounded-xl  mt-7 shadow-costum1 login">
+    <div id="pemilik-login" class="p-6 rounded-xl  shadow-costum1 login">
       {{-- <button class="text-2xl text-gray-500 kembali"><i class="fa-solid fa-arrow-left"></i></button> --}}
       <p class="text-xl font-semibold mt-5">Login</p><br>
       <button class=" border p-5 w-full  rounded-md mt-6 flex">
           <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" class="w-8 " alt=""></a>
           <p class="text-xl font-semibol  ml-3">Singn In With Google</p>
       </button>
-      <button class=" border p-5 w-full  rounded-md mt-4 flex hidden">
+      <button class=" border p-5 w-full  rounded-md mt-2 flex hidden">
           <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="w-8 " alt=""></a>
           <p class="text-xl font-semibol  ml-3">Singn In With Facebook</p>
       </button>
