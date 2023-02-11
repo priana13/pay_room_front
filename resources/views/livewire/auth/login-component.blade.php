@@ -15,7 +15,17 @@
     <div id="pemilik-login" class="p-6 rounded-xl  shadow-costum1 login">
       {{-- <button class="text-2xl text-gray-500 kembali"><i class="fa-solid fa-arrow-left"></i></button> --}}
       <p class="text-xl font-semibold mt-5">Login</p><br>
-      <button class=" border p-5 w-full  rounded-md mt-6 flex">
+
+      <div>
+          @if (session()->has('message'))
+              <div class="alert alert-success">
+                  {{ session('message') }}
+              </div>
+          @endif
+      </div>
+
+
+      <button class=" border p-5 w-full hidden  rounded-md mt-6 flex">
           <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" class="w-8 " alt=""></a>
           <p class="text-xl font-semibol  ml-3">Singn In With Google</p>
       </button>
@@ -23,7 +33,7 @@
           <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="w-8 " alt=""></a>
           <p class="text-xl font-semibol  ml-3">Singn In With Facebook</p>
       </button>
-      <div class="flex items-center py-4">
+      <div class="flex items-center py-4 hidden">
           <div class="flex-grow h-px border"></div> 
           <span class="flex-shrink  text-gray-500 px-4  font-light">or</span>
           <div class="flex-grow h-px border"></div>
