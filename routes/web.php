@@ -28,7 +28,7 @@ Route::middleware(['api-guest'])->group(function(){
 
 
 Route::middleware(['auth-api'])->group(function(){
-   Route::view('profile', 'livewire.member.profile_page')->name('profile');
+   Route::view('member/profile', 'member.profile')->name('profile');
    Route::view('my-dashboard', 'livewire.member.my-dashboard')->name('my-dashboard');
 
 });

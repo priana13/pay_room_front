@@ -17,17 +17,17 @@
             <div>
                 <div id="kost_saya_tab" class="tab_menu p-2">
                   <div class="border rounded-xl p-5 lg:w-[90%] mx-auto mt-3">
-                    <p class="font-bold text-xl">Kost Saya</p>
+                    <p class="font-bold text-xl">Booking</p>
                     <div class="lg:px-36 mt-20">
-                      <p class="font-bold text-xl">Kamu Belum Menyawa Kost</p>
+                      <p class="font-bold text-xl">Kamu Belum Melakukan Booking</p>
                       <br>
-                      <p>Yuk, sewa di Mamikos atau masukkan kode dari pemilik kos untuk aktifkan halaman ini! Coba cara ngekos modern dengan manfaat berikut ini.</p>
+                      <p>Yuk, Booking Hotel dan dapatkan kenyamanan menginap dihotel kami</p>
                       <br>
                       <p><i class="fa-regular fa-clipboard"></i> Tagihan dan kontrak sewa tercatat rapi</p> <br>
-                      <p><i class="fa-solid fa-money-bill"></i> Mamikos menjaga keamanan transaksi</p> <br>
+                      <p><i class="fa-solid fa-money-bill"></i> Kami menjaga keamanan transaksi</p> <br>
                       <p><i class="fa-solid fa-coins"></i> Cashless, dengan beragam metode pembayaran</p> <br>
                       <button class="w-full py-3 font-semibold bg-[#29af61] rounded-md text-white">
-                        Mulai Cari dan Sewa kost
+                        Mulai Cari Hotel
                       </button>
                     </div>
                   </div>
@@ -38,10 +38,10 @@
                     <p class="font-bold text-2xl m-5">Booking</p>
                     <div class=" border-b">
                       <button id="rdr_rw" class="py-4 w-[20%] text-[#29af61] border-b-2 border-[#29af61] font-semibold btn_rd">
-                          Riwayat
+                          Aktif
                       </button>
                       <button id="rdr_df" class="py-4 w-[20%] text-gray-400  font-semibold btn_rd">
-                         Daftar
+                          Selesai
                       </button>
                       <button id="rdr_bd" class="py-4 w-[20%]  text-gray-400  font-semibold btn_rd">
                         Baru Dilihat
@@ -52,9 +52,9 @@
                       <!-- empty -->
                       <div class="max-w-md mx-auto text-center">
                         <img class="w-48 mx-auto" src="./img/icon/empty.jpg" alt="">
-                        <p> Belum ada Kos di Draft. Yuk, mulai cari & booking Kos yang kamu inginkan!</p>
+                        <p> Belum ada Hotel di Draft. Yuk, mulai cari & booking Hotel yang kamu inginkan!</p>
                         <button class="w-full py-3 font-semibold bg-[#29af61] rounded-md text-white mt-5">
-                           Cari kost
+                           Cari Hotel
                         </button>
                       </div>  
                     </div>
@@ -63,9 +63,9 @@
                       <!-- empty -->
                       <div class="max-w-md mx-auto text-center">
                         <img class="w-48 mx-auto" src="./img/icon/empty.jpg" alt="">
-                        <p> Kamu belum booking kost nih, yuk mulai booking kosan yang kamu inginkan</p>
+                        <p> Kamu belum booking Hotel nih, yuk mulai booking hotel yang kamu inginkan</p>
                         <button class="w-full py-3 font-semibold bg-[#29af61] rounded-md text-white mt-5">
-                           Cari kost
+                           Cari Hotel
                         </button>
                       </div>  
                     </div>
@@ -76,8 +76,8 @@
                             <div style="background-image: url(https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg);" class="bg-no-repeat bg-cover rounded-lg bg-center  h-full w-full">
                             </div>
                               <div>
-                                <p class="font-semibold line-clamp-1">Kost LPT Lalaldon Tipe B Ciomas Bogor, Ciomas, Kabupat</p>
-                                <p class="text-red-600 text-sm">Sisa 4 Kamar • Putri</p>
+                                <p class="font-semibold line-clamp-1">Hotel Tipe B Ciomas Bogor, Ciomas, Kabupat</p>
+                                <p class="text-red-600 text-sm">Double</p>
                                 <div class="grid lg:grid-cols-[40%_22%_22%_16%] mt-3">
                                   <div>
                                     <p class="">Hitungan Sewa</p>
@@ -92,7 +92,7 @@
                                     <p class="font-semibold">Belum terisi</p>
                                   </div>
                                   <div class="lg:flex items-center justify-center hidden  ">
-                                    <a class="font-semibold text-[#29af61]" href="">Lihat Sewa</a>
+                                    <a class="font-semibold text-[#29af61]" href="">Lihat</a>
                                   </div>
                                 </div>
                               </div>
