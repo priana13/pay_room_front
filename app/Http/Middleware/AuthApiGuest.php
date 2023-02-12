@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class AuthApiGuest
 {
@@ -18,10 +19,23 @@ class AuthApiGuest
     {
 
         $token = session()->get('app_token'); 
+     
         
         if($token){
 
-            return redirect()->route('my-dashboard');
+            $url = config('services.api_url');  
+            $response = Http::accept('application/json')
+                        ->withToken($token)->get($url . '/user'); 
+
+                if($response->unauthorized()){
+
+                    return $next($request);
+
+                }else{
+
+                    return redirect()->route('my-dashboard');
+                }
+           
             
         }else{
 

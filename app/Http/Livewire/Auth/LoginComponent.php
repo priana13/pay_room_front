@@ -24,14 +24,16 @@ class LoginComponent extends Component
         ]);
 
 
-        $url = config('services.api_url');       
+        $url = config('services.api_url'); 
+        
+      
 
         $response = Http::withHeaders([
                         'Accept' => 'application/json'           
                     ])->post($url . '/login', [                      
                         'email' => $this->email,                       
                         'password' => $this->password
-                    ]);
+                    ]);     
 
         $response->onError(function($response){
 

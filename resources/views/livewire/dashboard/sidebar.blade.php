@@ -28,4 +28,7 @@
         <i class="fa-solid fa-user-check text-lg"></i>
         <p class="ml-3 mt-1">Verifikasi Akun</p>
     </button>
+
+    <livewire:auth.logout />
+
 </div>
