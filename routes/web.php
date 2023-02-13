@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MyDashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SingleProductController;
 use Illuminate\Support\Facades\Route;
@@ -29,7 +30,7 @@ Route::middleware(['api-guest'])->group(function(){
 
 Route::middleware(['auth-api'])->group(function(){
    Route::view('member/profile', 'member.profile')->name('profile');
-   Route::view('my-dashboard', 'livewire.member.my-dashboard')->name('my-dashboard');
+   Route::get('my-dashboard', [MyDashboardController::class , 'index'])->name('my-dashboard');
 
 });
 
