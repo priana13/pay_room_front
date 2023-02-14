@@ -1,7 +1,7 @@
 <div>
     <div class="rounded-t-lg shadow-costum1 p-3">
       <div class="grid grid-cols-[30%_auto] lg:grid-cols-[20%_auto] gap-5">
-        {{-- <div style="background-image: url(https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg);" class="bg-no-repeat bg-cover rounded-lg bg-center  h-full w-full"> --}}
+        <div style="background-image: url(https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg);" class="bg-no-repeat bg-cover rounded-lg bg-center  h-full w-full">
         </div>
           <div>
             <p class="font-semibold line-clamp-1">{{ $hotel_name }}</p>
@@ -20,7 +20,7 @@
                 <p class="font-semibold">{{ date('d-m-Y', strtotime($end)) }}</p>
               </div>
               <div class="lg:flex items-center justify-center hidden  ">
-                <a class="font-semibold text-[#29af61]" href="">Lihat</a>
+                {{-- <a class="font-semibold text-[#29af61]" href="">Lihat</a> --}}
               </div>
             </div>
           </div>
@@ -51,4 +51,4 @@
       </div>
     </div>
     @endif
-  </div>
+</div>
