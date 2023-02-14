@@ -12,9 +12,7 @@
 
             <div>
             
-                <livewire:member.dashboard-panel :user="$user" />      
-                
-                
+                <livewire:member.dashboard-panel :user="$user" /> 
 
                 <livewire:member.booking-history />
 
@@ -42,6 +40,9 @@
         $("#"+this.id+'_tab').show()
         $(".menu_btn").css({ ' --tw-text-opacity' : '1', 'color' : 'rgb(107 114 128 / var(--tw-text-opacity)'});  
         $("#"+this.id).css("color","black");     
+
+        // alert('oke');
+
       // console.log(this.id)
       });
 

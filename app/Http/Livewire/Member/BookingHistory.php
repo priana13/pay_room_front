@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Http;
 class BookingHistory extends Component
 {
     public $booking;
+    public $status = 'Aktif'; // Aktif, Done
 
     public function render()
     {
@@ -15,12 +16,20 @@ class BookingHistory extends Component
         $url = config('services.api_url');   
         $token = session()->get('app_token');    
 
-        $response = Http::withToken($token)->get('http://127.0.0.1:8001/api/booking_hostory');
+        $response = Http::withToken($token)->get($url.'/booking_history',[
+            'status' => $this->status
+        ]);
+
         $response = $response->collect(); 
 
-        $this->booking = $response;        
+        $this->booking = $response['data'];         
        
 
         return view('livewire.member.booking-history');
+    }
+
+    public function status($status){
+
+        $this->status = $status;
     }
 }
