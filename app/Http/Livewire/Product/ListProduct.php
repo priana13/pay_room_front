@@ -10,6 +10,9 @@ class ListProduct extends Component
     public $hotel;
     public $title;
 
+    public $page_1 = [];
+    public $page_2 = [];
+
     public function mount($title = null){
 
         $this->title = $title;
@@ -24,7 +27,16 @@ class ListProduct extends Component
 
         $data = collect($response['data']) ;
 
-        $this->hotel = $data->take(4);
+        $this->hotel = $data->take(8)->chunk(4);
+
+        $this->page_1 = $this->hotel[0];   
+
+        if( isset($this->hotel[1] ) ){
+
+            $this->page_2 = $this->hotel[1];
+
+        }
+        
 
         return view('livewire.product.list-product');
     }

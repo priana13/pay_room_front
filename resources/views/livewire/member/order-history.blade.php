@@ -31,8 +31,9 @@
         </div>
         <div class="max-w-md mx-auto text-center mt-5">
             <img class="w-48 mx-auto" src="./img/icon/empty.jpg" alt="">
-            <p class="text-lg font-semibold">Belum Ada Transaksi Baru</p>
-            <p> Belum ada Kos di Draft. Yuk, mulai cari & booking Kos yang kamu inginkan!</p>
+
+            <p class="text-lg font-semibold">Belum Ada Transaksi Baru</p>    
+
         </div> 
     </div>
     </div>
