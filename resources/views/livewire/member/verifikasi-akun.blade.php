@@ -1,5 +1,5 @@
 <div id="verif_tab" class="tab_menu hidden">
-    <div class="border rounded-xl p-5 lg:w-[90%] mx-auto mt-3 ">
+    <div class="border rounded-xl p-5 lg:w-[90%] mx-auto mt-3 hidden">
       <p class="font-bold text-xl">Email and Phone</p>
       <p class="text-sm text-[#29af61]  mt-5">Mengapa Verifikasi Penting?</p>
       <p> Verifikasi bisa mencegah akun kamu diretas oleh orang lain, Karena untuk mengakses akun tetap membutuhkan kode verifikasi yang hanya diketahui oleh Anda.</p>
@@ -32,16 +32,31 @@
           <p class="font-semibold">Lengkapi datamu untuk mempercepat proses booking.</p>
           <p>Kami melindungi informasi dan penggunaan data diri para pengguna kami.</p>
       </div>
+
       <div class="grid sm:grid-cols-[30%_auto] gap-2">
           <div>
             Jenis Identitas
           </div>
           <div>
-            <input id="ktp" name="identitas" type="radio"> <label for="ktp">KTP</label>&emsp;
-            <input id="SIM" name="identitas" type="radio"> <label for="SIM">SIM</label>&emsp;
-            <input id="Passport" name="identitas" type="radio"> <label for="Passport">Passport</label>
+            <input id="ktp" name="identitas" type="radio" value="KTP"> <label for="ktp">KTP</label>&emsp;
+            <input id="SIM" name="identitas" type="radio" value="SIM"> <label for="SIM">SIM</label>&emsp;
+            <input id="Passport" name="identitas" type="radio" value="Passport"> <label for="Passport">Passport</label>
           </div>
       </div>
+
+      <div class="grid sm:grid-cols-[30%_auto] gap-2 mt-3">
+        <div>
+          Nomor Identitas
+        </div>
+        <div>
+            <input type="text" class="w-full focus:ring-0 rounded-md border-gray-300">
+        </div>
+    </div>
+
+
+
+
+
       <div class="grid sm:grid-cols-[30%_auto] gap-2 mt-5">
         <div>
           Upload Foto Identitas
@@ -51,13 +66,15 @@
             <i class="fa-solid fa-id-card-clip"></i>
           </button>
           <input class="hidden" id="kartu" type="file">
+          {{--           
           <button id="selfi-btn" class="bg-gray-100 h-28 w-36 border rounded-md text-[#29af61]  lg:ml-20 text-2xl">
             <i class="fa-solid fa-camera-retro"></i>
-          </button>
+          </button> --}}
+
           <input class="hidden" id="selfi" type="file">
           <p class="text-xs text-red-500 mt-5"><i class="fa-solid fa-circle-exclamation"></i> Kamu belum mengunggah foto kartu identitas</p>
           <div class="flex mt-5">
-            <input id="pvpl" type="checkbox">
+            <input id="pvpl" type="checkbox" required>
             <label class="" for="pvpl">
             <p class="text-xs leading-3 ml-2 -mt-1">Dengan melanjutkan, saya menjamin data yang diberikan adalah benar dan menyetujui <a class="text-[#29af61]" href="">privacy policy</a> </p> 
             </label>
