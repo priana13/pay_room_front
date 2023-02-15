@@ -56,11 +56,22 @@ class LoginComponent extends Component
 
             $data = $response->collect();
 
-            $token = $data['token'];
+            if(count($data) < 1){
+
+                session()->flash('message', "Account Not Found");  
+            }else{
+
+                $token = $data['token'];
     
-            session()->put('app_token', $token);
+                session()->put('app_token', $token);
+
+                Redirect::route('my-dashboard');        
+
+            }
+
+
     
-            Redirect::route('my-dashboard');            
+               
     
         }
     }

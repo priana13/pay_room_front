@@ -10,7 +10,7 @@ class DashboardPanel extends Component
     public $is_order = FALSE;
     public $user;   
 
-    public function mount($user){
+    public function mount($user){        
 
        $this->user = $user;      
 

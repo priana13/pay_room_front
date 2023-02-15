@@ -20,15 +20,15 @@
         </div>
         <div class="text-right hidden lg:block">
           <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="h-full hover:border-b-[3px] border-[#29af61] font-bold px-3">
-            Cari Iklan <i class="fa-sharp fa-solid fa-caret-down"></i>
+            Booking <i class="fa-sharp fa-solid fa-caret-down"></i>
             <!-- Dropdown menu -->
             <div id="dropdown" class="z-10 mt-5 text-left hidden   bg-white divide-y divide-gray-100 rounded shadow w-44 ">
               <ul class="py-1 text-sm text-gray-700 font-medium">
                 <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100  "><i class="fa-solid fa-bed"></i> Kos</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100  "><i class="fa-solid fa-bed"></i> Rumah Hotel</a>
                 </li>
                 <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 "><i class="fa-solid fa-city"></i> Apartemen</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 "><i class="fa-solid fa-city"></i> Apartement Hotel</a>
                 </li>
               </ul>
           </div>

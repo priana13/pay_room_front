@@ -16,9 +16,9 @@ class Sidebar extends Component
         $token = session()->get('app_token');    
 
         $response = Http::withToken($token)->get($url . '/user');
-        $response = $response->collect();
+        $response = $response->collect();     
 
-        $this->user = $response;       
+        $this->user = $response['data'];       
 
         return view('livewire.dashboard.sidebar');
     }

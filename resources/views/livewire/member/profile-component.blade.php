@@ -2,12 +2,13 @@
     <div class="border w-full rounded-lg mt-8">
         <div class="p-2 bg-green-100 font-semibold text-lg">
             Data Pribadi
-        </div>
+        </div>      
+
         <div class="text-center">
             <button id="avtr-btn" class="mx-auto  w-32 h-32  bg-[#EFF1F3] text-gray-500 text-3xl rounded-full mt-5" >
                 <i class="fa-solid fa-camera-retro"></i>
             </button>
-            <input id="avtr" class="hidden" type="file">
+            <input id="avtr" wire:model="photo" class="hidden" type="file">
         </div>
         <div class="max-w-3xl mx-auto">
             <div class="grid grid-cols-[25%_auto]  mt-5">
@@ -33,7 +34,7 @@
                     Email
                 </div>
                 <div>
-                    <input class="w-full focus:ring-0 rounded-md border-gray-300" type="text" wire:model="email">
+                    <input class="w-full focus:ring-0 rounded-md border-gray-300" type="text" wire:model="email" disabled>
                 </div>
             </div>
 

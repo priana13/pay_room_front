@@ -15,7 +15,7 @@ class MyDashboardController extends Controller
         $response = Http::withToken($token)->get($url . '/user');
         $response = $response->collect();
 
-        $user = $response;           
+        $user = $response['data'];           
 
         return view('livewire.member.my-dashboard', compact('user'));
     }
