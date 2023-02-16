@@ -5,10 +5,12 @@ namespace App\Http\Livewire\Member;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
 use Livewire\WithFileUploads;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 class ProfileComponent extends Component
 {
     use WithFileUploads;
+    use LivewireAlert;
 
     public $user;
 
@@ -19,10 +21,8 @@ class ProfileComponent extends Component
             $status,
             $phone_number,
             $email,
-            $photo;
-
-    protected $listeners = ['refresh' => '$refresh'];
-
+            $photo,
+            $profesi;
 
     public function mount(){
 
@@ -38,6 +38,7 @@ class ProfileComponent extends Component
         $this->phone_number = $this->user['phone_number'];
         $this->email = $this->user['email'];
         $this->photo = $this->user['photo'];
+        $this->profesi = $this->user['profesi'];        
 
 
     }
@@ -53,14 +54,24 @@ class ProfileComponent extends Component
         $url = config('services.api_url');   
         $token = session()->get('app_token');
 
-        $response = Http::withToken($token)->post($url . '/user/update', [
-            'name' => $this->name,
-            'phone_number' => $this->phone_number,
-            // 'photo' => $this->photo
-        ]);
-        
-        $this->emit('refresh');
+        $path = $this->photo->store('public/profile');
+        $path_ex = explode('public/', $path);         
 
-        session()->flash('message', 'Data Berhasil Di Update.');
+        $photo_url = url('storage/' . $path_ex[1]);       
+
+        $response = Http::withHeaders([ 'Content-Type' => 'multipart/form-data' ])
+                        ->withToken($token)->attach(
+                            'photo', $photo_url
+                        )->post($url . '/user/update', [
+                            'name' => $this->name,
+                            'phone_number' => $this->phone_number,
+                            'profesi' => $this->profesi         
+                        ]);
+
+        // dd($response->collect());
+                        
+        $this->alert('success', 'Update Success', [
+            'toast' => false
+        ]);
     }
 }
