@@ -110,7 +110,7 @@
                     Pekerjaan
                 </div>
                 <div>
-                    <input class="w-full focus:ring-0 rounded-md border-gray-300" type="text">
+                    <input wire:model="profesi" class="w-full focus:ring-0 rounded-md border-gray-300" type="text">
                 </div>
             </div>
             <br>
