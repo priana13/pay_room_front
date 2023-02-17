@@ -35,35 +35,6 @@ Route::middleware(['auth-api'])->group(function(){
 });
 
 
-Route::get('produk', function(){
-
-    if( session()->get('app_token') ){
-
-        return 'halaman produk';
-
-     }else{
-
-        return redirect()->route('login');
-     }
-
-})->name('produk');
-
-
-
-// Route::get('/hotel', function (Request $request) {
-//     $token = uniqid(); 
-//     session()->put('token', $token);
-//     return session()->get('token');
-
-// });
-
-
-// Route::get('/about', function (Request $request) {  
-//     $value = $request->session()->get('token');
-//     dd($value);
-// });
-
-
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');

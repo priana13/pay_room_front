@@ -24,6 +24,8 @@ class DetailHotel extends Component
 
         $data = collect($response['data']) ;
 
+        // dd($data);
+
         /**
          *     "hotel_id" => 3
             "title" => "Nulla culpa reprehenderit est quaerat."
