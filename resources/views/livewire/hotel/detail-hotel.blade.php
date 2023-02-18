@@ -70,6 +70,17 @@
           </div>
         </div>
 
+        {{-- description --}}
+
+       
+          <div class="mt-7">
+            <p class="text-xl font-bold text-[#383746] mt-5 mb-2">Deskripsi</p>
+             {!! $desc !!}
+            <br>
+            <button id="lihat_cerita" class="underline mt-1" wire:click="selengkapnya">{{ $label }}</button>
+          </div>
+               
+
         <livewire:hotel.fasilitas-hotel :slug="$hotel['slug']" />
 
         <div class="mt-7 border-t">
@@ -193,13 +204,15 @@
                  </div>
                  <a class="px-8 py-3 bg-[#29af61] block max-w-md mx-auto text-center mt-7 text-white font-semibold rounded-md" href="">Booking Sekarang</a>  
             </div>
+            @if($hotel['info'])
             <div class="rounded-lg border  p-5 mt-3">
                 <i class="fa-solid fa-gift"></i>
-                <p class="text-xl font-bold text-[#383746]">Sewa 3 bulan, disc besar!</p>
-                <p>Sewa 3 bulan langsung dapat diskon 400rb! Kode Promo: AWALHEMAT Hanya s/d 31 Januari 2023</p>
+                <p class="text-xl font-bold text-[#383746]">{{ $hotel['info']['title'] }}</p>
+                {!! $hotel['info']['message'] !!}
 
-                <p> 10 Jan 2023 - 31 Jan 2023</p>
+               
             </div>
+            @endif
         </div>
       </div>
     </div>

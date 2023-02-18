@@ -5,11 +5,14 @@ namespace App\Http\Livewire\Hotel;
 use Livewire\Component;
 use Symfony\Component\HttpFoundation\RequestMatcher\HostRequestMatcher;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 
 class DetailHotel extends Component
 {
     public $slug;
     public $hotel;
+    public $desc, $limit = 20;
+    public $label = "Lihat Selengkapnya";
 
     public function mount($slug){
         $this->slug = $slug;
@@ -50,7 +53,24 @@ class DetailHotel extends Component
          */      
 
         $this->hotel = $data;
+        $this->desc = Str::limit($this->hotel['desc'], $this->limit) ;
 
         return view('livewire.hotel.detail-hotel');
+    }
+
+    public function selengkapnya(){
+
+        if($this->label === "Lihat Selengkapnya"){
+
+            $this->limit = 1000;
+            $this->label = "Sembunyikan";
+
+        }else{
+
+            $this->limit = 20;
+            $this->label = "Lihat Selengkapnya";
+        }
+
+
     }
 }
