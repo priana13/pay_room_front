@@ -83,7 +83,7 @@
 
         <livewire:hotel.fasilitas-hotel :slug="$hotel['slug']" />
 
-        <div class="mt-7 border-t">
+        <div class="mt-7 border-t hidden">
           <p class="text-xl font-bold text-[#383746] mt-5">Ketentuan pengajuan sewa</p>
           <p class="text-md font-semibold text-[#383746] mt-5">Bisa bayar DP (uang muka) dulu</p>
           <p class="text-md font-semibold text-gray-600">Biaya DP adalah 30% dari biaya yang dipilih.</p>
@@ -108,79 +108,12 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="mt-7 border-t">
-          <p class=" text-2xl my-5 font-semibold ml-3"><i class="fa-solid fa-star text-green-500"></i> 4.3 (10 review)</p>
-          <div>
-            <div class="grid grid-cols-[auto_70px] mt-7">
-              <div class="flex items-center text-gray-600 text-xl ">
-                <div class=" flex w-12 h-12 bg-gray-200 rounded-full justify-center items-center">
-                  <i class="fa-solid fa-user my-auto"></i>
-                </div>
-                <div class="ml-3">
-                  <p class="text-md font-semibold">Anonim</p>
-                  <p class="text-sm text-gray-400 font-semibold">1 bulan</p>
-                </div>
-              </div>
-              <div class="flex justify-end">
-                <p class="text-[#383746] text-md font-semibold h-9 w-14 p-1 border"><i class="fa-solid fa-star"></i> 4.6</p>
-              </div>
-            </div>
-            <p class="text-sm text-gray-600 my-5">Untuk keseluruhan lumayan</p>
-            <div class="px-7 border-l-2 mt-1">
-              <p class="text-md font-semibold">Balasan dari Resepsionis</p>
-              <p class="text-sm text-gray-400 font-semibold">4 minggu yang lalu</p>
-              <p class="mt-4">Halo, Kakak. Terima kasih atas review dan ratingnya. Semoga Anda selalu betah untuk singgah di hotel kami :)</p>
-            </div>
-          </div>
-          <div>
-            <div class="grid grid-cols-[auto_70px] mt-7">
-              <div class="flex items-center text-gray-600 text-xl ">
-                <div class=" flex w-12 h-12 bg-gray-200 rounded-full justify-center items-center">
-                  <i class="fa-solid fa-user my-auto"></i>
-                </div>
-                <div class="ml-3">
-                  <p class="text-md font-semibold">Anonim</p>
-                  <p class="text-sm text-gray-400 font-semibold">1 bulan</p>
-                </div>
-              </div>
-              <div class="flex justify-end">
-                <p class="text-[#383746] text-md font-semibold h-9 w-14 p-1 border"><i class="fa-solid fa-star"></i> 4.6</p>
-              </div>
-            </div>
-            <p class="text-sm text-gray-600 my-5">Untuk keseluruhan lumayan</p>
-            <div class="px-7 border-l-2 mt-1">
-              <p class="text-md font-semibold">Balasan dari Pemilik</p>
-              <p class="text-sm text-gray-400 font-semibold">4 minggu yang lalu</p>
-              <p class="mt-4">Halo, Kakak. Terima kasih atas review dan ratingnya. Semoga Anda selalu betah untuk singgah di kost kami :)</p>
-            </div>
-          </div>
-          <div>
-            <div class="grid grid-cols-[auto_70px] mt-7">
-              <div class="flex items-center text-gray-600 text-xl ">
-                <div class=" flex w-12 h-12 bg-gray-200 rounded-full justify-center items-center">
-                  <i class="fa-solid fa-user my-auto"></i>
-                </div>
-                <div class="ml-3">
-                  <p class="text-md font-semibold">Anonim</p>
-                  <p class="text-sm text-gray-400 font-semibold">1 bulan</p>
-                </div>
-              </div>
-              <div class="flex justify-end">
-                <p class="text-[#383746] text-md font-semibold h-9 w-14 p-1 border"><i class="fa-solid fa-star"></i> 4.6</p>
-              </div>
-            </div>
-            <p class="text-sm text-gray-600 my-5">Untuk keseluruhan lumayan</p>
-            <div class="px-7 border-l-2 mt-1">
-              <p class="text-md font-semibold">Balasan dari Pemilik kos</p>
-              <p class="text-sm text-gray-400 font-semibold">4 minggu yang lalu</p>
-              <p class="mt-4">Halo, Kakak. Terima kasih atas review dan ratingnya. Semoga Anda selalu betah untuk singgah di kost kami :)</p>
-            </div>
-          </div>
-          <button class="p-3 border rounded-md mt-7 font-semibold">
-            Lihat Semua Review(9)
-          </button>
-        </div>
+        </div>      
+
+        @livewire('hotel.review-hotel', [
+          'hotelId' => $hotel['hotel_id']
+        ])
+
       </div>
       <div>
         <div class="sticky top-32 hidden lg:block">
@@ -219,8 +152,6 @@
 
 
     <livewire:hotel.list-hotel-footer />
-
-
     
     
   <section id="bottom-navigation" class="fixed inset-x-0 -bottom-[1px] z-10 bg-white shadow-costum1 rounded-t-2xl py-3 pr-4 lg:hidden">
