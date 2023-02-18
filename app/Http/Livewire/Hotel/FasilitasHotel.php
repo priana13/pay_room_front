@@ -18,13 +18,12 @@ class FasilitasHotel extends Component
 
         $url = config('services.api_url');       
 
-        $response = Http::get($url . '/house/' . $this->slug . '/fasilitas');
+        $response = Http::get($url . '/house/' . $this->slug . '/facilities');
         $response = $response->collect();
 
-        // $data = collect($response['data']) ;
+        $category =$response;
+      
 
-        // dd($response);
-
-        return view('livewire.hotel.fasilitas-hotel');
+        return view('livewire.hotel.fasilitas-hotel', compact('category'));
     }
 }
