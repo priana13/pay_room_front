@@ -1,7 +1,5 @@
 <div>
 
-
-
   <div class="sticky top-0 z-30 grid grid-cols-[40px_auto_70px] py-3 px-2 bg-white lg:hidden shadow-lg">
     <div>
       <button class="text-xl">
@@ -25,11 +23,11 @@
   <div class="max-w-6xl mx-auto px-2">
     <div class="grid lg:grid-cols-[65%_35%] gap-2">
       <div>
-        <img class="object-cover w-full lg:h-[430px] rounded-lg lg:rounded-l-lg" src="https://static.mamikos.com/uploads/cache/data/style/2022-07-20/OzNFQG4R-540x720.jpg" alt="">
+        <img class="object-cover w-full lg:h-[430px] rounded-lg lg:rounded-l-lg" src="{{ $hotel['thumbnail'] }}" alt="">
       </div>
       <div class="hidden lg:block">
-        <img class="object-cover w-full h-[210px] rounded-tr-lg" src="https://static.mamikos.com/uploads/cache/data/style/2022-07-20/OzNFQG4R-540x720.jpg" alt="">
-        <img class="object-cover w-full h-[210px] rounded-br-lg mt-2" src="https://static.mamikos.com/uploads/cache/data/style/2022-07-20/OzNFQG4R-540x720.jpg" alt="">
+        <img class="object-cover w-full h-[210px] rounded-tr-lg" src="{{ $hotel['thumbnail'] }}" alt="">
+        <img class="object-cover w-full h-[210px] rounded-br-lg mt-2" src="{{ $hotel['thumbnail'] }}" alt="">
       </div>
     </div>
     <div class="grid lg:grid-cols-[65%_35%] gap-2 ">

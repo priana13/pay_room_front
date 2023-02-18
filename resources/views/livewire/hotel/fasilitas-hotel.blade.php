@@ -11,7 +11,7 @@
         
         <div class="grid grid-cols-[40px_auto] mt-5">
             <div class="flex items-center text-gray-600 text-xl">
-                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <i class="fa-solid fa-{{ $item['icon'] }}"></i>
             </div>
             <div >
                 <p class="text-[#383746] text-md font-semibold">{{ $item['name'] }}</p>
