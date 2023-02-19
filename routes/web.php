@@ -36,6 +36,8 @@ Route::middleware(['auth-api'])->group(function(){
 
 Route::view('/themes/order', 'themes.order');
 Route::view('/themes/payment', 'themes.payment');
+Route::view('/themes/thankyou', 'themes.thankyou');
+
 
 
 
