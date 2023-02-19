@@ -3,7 +3,7 @@
           <div class="grid lg:grid-cols-[38%_0%_7%_21%_34%]">
             <div class="mt-2">
               <a class="text-2xl font-semibold">Promo Ngebut</a>&nbsp;
-              <select class="text-2xl focus:outline-none text-[#29af61] font-semibold border-b-2" name="" id="">
+              <select class="text-2xl focus:outline-none text-[#29af61] font-semibold border-b-2 select" name="" id="">
                 <option value="">Semua Kota</option>
                 <option value="">Jakata Selatan</option>
                 <option value="">Bogor </option>

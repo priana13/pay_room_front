@@ -1,13 +1,13 @@
 <div class="sticky top-0 z-30  ">
     <div class="bg-[#fafafa] hidden lg:block">
-      <div class="grid grid-cols-[auto_150px] py-3 px-2 max-w-6xl mx-auto text-xs font-semibold text-gray-500">
+      <div class="grid grid-cols-[auto_200px] py-3 px-2 max-w-6xl mx-auto text-xs font-semibold text-gray-500">
         <div class="text-xs font-semibold text-gray-500">
           <a class="hidden"><i class="fa-solid fa-mobile" disabled></i>&nbsp; Download App</a>&emsp; &emsp; 
           <a><i class="fa-solid fa-calendar-week"></i>&nbsp;  Booking Hotel</a>&emsp; 
           <a href="https://app.keypayroom.co.id/admin/login"><i class="fa-solid fa-user"></i>&nbsp;  Admin</a>
         </div>
         <div class="text-right">
-          <a><i class="fa-solid fa-bullhorn"></i>&nbsp; Promosikan Iklan Anda</a>
+          <a><i class="fa-solid fa-phone"></i>&nbsp; Contact Us: +021 4449 xxx</a>
         </div>
       </div>
     </div>
@@ -20,6 +20,11 @@
           </button>
         </div>
         <div class="text-right hidden lg:block">
+
+          <a class="h-full  hover:border-b-[3px] border-[#29af61] px-3 font-bold" href="{{ route('front.home_page') }}">
+            Home
+          </a>          
+          
           <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="h-full hover:border-b-[3px] border-[#29af61] font-bold px-3">
             Booking <i class="fa-sharp fa-solid fa-caret-down"></i>
             <!-- Dropdown menu -->

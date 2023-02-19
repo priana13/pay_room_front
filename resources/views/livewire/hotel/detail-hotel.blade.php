@@ -135,7 +135,7 @@
                         </select>
                     </div>
                  </div>
-                 <a class="px-8 py-3 bg-[#29af61] block max-w-md mx-auto text-center mt-7 text-white font-semibold rounded-md" href="">Booking Sekarang</a>  
+                 <a class="px-8 py-3 bg-[#29af61] block max-w-md mx-auto text-center mt-7 text-white font-semibold rounded-md" href="{{ route('checkout') }}">Booking Sekarang</a>  
             </div>
             @if($hotel['info'])
             <div class="rounded-lg border  p-5 mt-3">

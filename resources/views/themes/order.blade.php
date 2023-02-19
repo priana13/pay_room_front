@@ -20,7 +20,7 @@
                   </div>
                 </div>
                 <div class="flex-none">
-                  <button class="btn btn-sm btn-primary">Login</button>
+                  <a class="btn btn-sm btn-primary" href="{{ route('login') }}">Login</a>
                 </div>
             </div>
            
@@ -59,10 +59,6 @@
                   </div>
 
 
-                  <div class="card-actions justify-end">
-                    <div class="badge badge-outline">Fashion</div> 
-                    <div class="badge badge-outline">Products</div>
-                  </div>
                 </div>
             </div>
 
@@ -154,7 +150,7 @@
               </div>
 
               <div class="px-4 mt-3 text-center">
-                <button class="btn btn-secondary">Bayar Sekarang</button>
+                <a class="btn btn-secondary" href="{{ route('payment') }}">Bayar Sekarang</a>
               </div>
 
 

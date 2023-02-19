@@ -1,5 +1,5 @@
 <div class="mt-7 border-t">
-    <p class=" text-2xl my-5 font-semibold ml-3"><i class="fa-solid fa-star text-green-500"></i> {{ $total_bintang }} ({{ $jumlah }} review)</p>
+    <p class=" text-2xl my-5 font-semibold ml-3"><i class="fa-solid fa-star text-green-500"></i> {{ floor($total_bintang)  }} ({{ $jumlah }} review)</p>
     
     @forelse($reviews as $review)
    

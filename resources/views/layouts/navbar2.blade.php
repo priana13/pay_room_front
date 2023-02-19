@@ -14,6 +14,7 @@
       <div class="grid grid-cols-2 px-2 max-w-6xl mx-auto text-sm  text-gray-500">
         <div class="py-3.5 flex">
           <a href="{{ route('front.home_page') }}"><img src="{{asset('storage/icon/logo_payRoom.png')}}" class="w-[80px] lg:mt-2" alt=""></a>
+          
           <button id="sch-bottom" class="hidden lg:block ml-10 text-sm text-gray-400 p-3 text-left w-80 shadow-costum1 rounded-md cari-btn">
             <i class="fa-solid fa-magnifying-glass"></i> Masukan nama lokasi/area/alamat
           </button>

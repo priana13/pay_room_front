@@ -34,9 +34,9 @@ Route::middleware(['auth-api'])->group(function(){
 
 });
 
-Route::view('/themes/order', 'themes.order');
-Route::view('/themes/payment', 'themes.payment');
-Route::view('/themes/thankyou', 'themes.thankyou');
+Route::view('/themes/order', 'themes.order')->name('checkout');
+Route::view('/themes/payment', 'themes.payment')->name('payment');
+Route::view('/themes/thankyou', 'themes.thankyou')->name('thankyou');
 
 
 
