@@ -8,7 +8,7 @@
 
 <div class="container mx-auto mt-5">
 
-    <div class="grid grid-cols-10 gap-2">
+    <div class="grid grid-cols-1 md:grid-cols-10 gap-2">
 
         <div class="col-span-6 px-4">
 
@@ -26,12 +26,39 @@
            
             <div class="card bg-base-100 shadow-md">
                 
-                <div class="card-body">
-                  <h2 class="card-title">
-                    Shoes!
-                    <div class="badge badge-primary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-body">                 
+                  
+                  <label for="label">
+                    <span class="label-text">Name</span>
+                  </label>
+                  <input type="text" placeholder="Name" class="input w-full shadow-sm input-bordered input-lg" />
+                 
+                  <label for="label">
+                    <span class="label-text">Email</span>
+                  </label>
+                  <input type="text" placeholder="Email" class="input w-full shadow-sm input-bordered input-lg " />
+
+                  <label for="label">
+                    <span class="label-text">Phone Number</span>
+                  </label>
+                  <input type="text" placeholder="Phone Number" class="input w-full shadow-sm input-bordered input-lg " />
+
+                  <div class="form-control w-full">
+                    <label class="label">
+                      <span class="label-text">Kewarga Negaraan</span>                     
+                    </label>
+                    <select class="select select-bordered select-lg">
+                      <option disabled selected>Pick one</option>
+                      <option>Star Wars</option>
+                      <option>Harry Potter</option>
+                      <option>Lord of the Rings</option>
+                      <option>Planet of the Apes</option>
+                      <option>Star Trek</option>
+                    </select>
+                   
+                  </div>
+
+
                   <div class="card-actions justify-end">
                     <div class="badge badge-outline">Fashion</div> 
                     <div class="badge badge-outline">Products</div>
@@ -43,31 +70,115 @@
             <!-- ... -->
         <div class="col-span-4">
 
-            <div class="card bg-base-100 shadow-xl mx-4">
-                
-                <div class="card-body">
-                  <h2 class="card-title">
-                    Shoes!
-                    <div class="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <div class="badge badge-outline">Fashion</div> 
-                    <div class="badge badge-outline">Products</div>
+
+          <div class="card card-side bg-base-100 shadow-md">
+           
+            {{-- hotel  --}}
+            <div class="card-body">
+              <div class="grid grid-flow-col auto-cols-max gap-2 my-2">
+                  <div class="bg-[url('https://demo.keypayroom.co.id/storage/sample.jpg')] w-[60px] h-[60px] rounded-md">
+                    tes
                   </div>
-                </div>
+                  <div>
+                      <h2 class="card-title">New movie is released!</h2>
+                      <p>Click the button to watch on Jetflix app.</p>
+                  </div>                
+                
+              </div>             
+
+              
+
+              <div class="card card-bordered p-3">
+
+                <div class="grid grid-cols-3 p-2">
+                  <div>
+                    <span class="font-bold">Mendaftar </span> <br>
+                    <span>Sab 4 Jan</span>
+                  </div>
+                  
+                  <div>
+                    <span class="font-bold">Sampai </span> <br>
+                    <span>Ming 5 Jan</span>
+                  </div>
+
+                  <div>
+                    <span class="font-bold">Kamar </span> <br>
+                    <span>1</span>
+                  </div>
+
+                </div>  
+                 {{-- grid tanggal  --}}
+
+                 <div class="mt-2 border-t-2 p-2">
+
+                  <span class="font-bold">Tipe Kamar </span> <br>
+                  <span>Kamar Super Nyaman</span>
+
+                 </div>
+  
               </div>
 
+
+              {{-- Rincian --}}
+
+              <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+                <span class="col-span-3">Harga Kamar</span>
+                <span class="col-span-1">Rp. 500.876</span>
+              </div>
+
+              <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+                <span class="col-span-3">Biaya Pajak & Layanan </span>
+                <span class="col-span-1">Termasuk</span>
+              </div>
+
+
+              <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+                <span class="col-span-3">Diskon Khusus</span>
+                <span class="col-span-1">Rp. 9.8847</span>
+              </div>
+
+              <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+                <span class="col-span-3">Sarapan</span>
+                <span class="col-span-1">Tidak Termasuk</span>
+              </div>
+
+
+              <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+                <span class="col-span-3">Bisa Refund</span>
+                <span class="col-span-1">Ya</span>
+              </div>
+
+              <div class="px-4 mt-3">
+
+                <h2 class="text-lg">Jumlah yang Harus Dibayar: <strong>Rp. 600.090</strong></h2>
+              </div>
+
+              <div class="px-4 mt-3 text-center">
+                <button class="btn btn-secondary">Bayar Sekarang</button>
+              </div>
+
+
             </div>
+            {{-- akhir card-body --}}           
+
+
+          </div>
+          {{-- akhir card --}}
+
+
+          </div>
             <!-- ... -->
             
         
         </div> 
+        {{-- col-span-4 --}}
 
     
     </div>
+    {{-- grid --}}
 
 </div>
+{{-- container --}}
 
 
 @endsection
