@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Hotel;
 
+use Carbon\Carbon;
 use Livewire\Component;
 use Symfony\Component\HttpFoundation\RequestMatcher\HostRequestMatcher;
 use Illuminate\Support\Facades\Http;
@@ -12,10 +13,20 @@ class DetailHotel extends Component
     public $slug;
     public $hotel;
     public $desc, $limit = 20;
-    public $label = "Lihat Selengkapnya";
+    public $label = "Lihat Selengkapnya"; 
+
+    // form
+    public $start_date,
+           $end_date,
+           $qty,
+           $guest,
+           $total;
 
     public function mount($slug){
         $this->slug = $slug;
+        $this->start_date = date('Y-m-d');
+        $this->end_date = date('Y-m-d');
+        $this->guest = 1;
 
     }
     public function render()
@@ -25,35 +36,17 @@ class DetailHotel extends Component
         $response = Http::get($url . '/house/' . $this->slug);
         $response = $response->collect();
 
-        $data = collect($response['data']) ;
-
-        // dd($data);
-
-        /**
-         *     "hotel_id" => 3
-            "title" => "Nulla culpa reprehenderit est quaerat."
-            "slug" => "voluptates-atque-sint-ad-sit-quis-id-nemo"
-            "desc" => "Autem voluptas in et totam eligendi esse eum blanditiis aut ducimus est voluptatem voluptas magni vitae explicabo et soluta consequatur accusamus numquam dolori ▶"
-            "address" => "Soluta praesentium eveniet minima."
-            "kota" => null
-            "maps" => null
-            "branch" => array:5 [▶]
-            "room_qty" => 3
-            "goest" => null
-            "room_label" => "Dolor tenetur."
-            "house_type" => "Kosan"
-            "house_gender" => "Putra"
-            "thumbnail" => null
-            "status" => "Draft"
-            "price" => 566805
-            "discount" => 7
-            "price_discount" => 527129
-            "created_at" => "2023-02-07T17:35:23.000000Z"
-
-         */      
+        $data = collect($response['data']) ;          
 
         $this->hotel = $data;
         $this->desc = Str::limit($this->hotel['desc'], $this->limit) ;
+
+        // hitung nominal hari
+        $selisih = strtotime($this->end_date)  - strtotime($this->start_date);
+
+        $this->qty = ($selisih / 60 / 60 / 24) + 1;
+
+        $this->total = $this->hotel['price_discount'] * $this->qty;
 
         return view('livewire.hotel.detail-hotel');
     }

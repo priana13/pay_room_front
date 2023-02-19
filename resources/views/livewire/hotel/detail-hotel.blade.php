@@ -121,21 +121,32 @@
                 <div class="text-sm mt-1">
                     <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> {{ number_format($hotel['discount'],0,',','.') }}%</a>
                     <a class="text-gray-400 line-through">Rp{{ number_format($hotel['price'],0,',','.') }}</a>
-                 </div>
+                 </div>                 
+
                  <div class="text-[#303030] mt-3">
-                    <a class="text-2xl font-semibold">Rp {{ number_format($hotel['price_discount'],0,',','.') }}</a><a>/ day</a> 
-                 </div>
+                  <a class="text-2xl font-semibold">Rp {{ number_format($total,0,',','.') }}</a><a>/ {{ $qty }} Day</a> 
+                </div>
+
                  <div class="grid grid-cols-2 gap-4 mt-3">
                     <div>
-                        <input class="w-full border p-3 rounded-md" type="date" value="{{ date('Y-m-d') }}">
+                        <input class="w-full border p-3 rounded-md" type="date" wire:model="start_date">
                     </div>
                     <div>
-                        <select class="w-full border p-3 rounded-md" name="" id="">
-                            <option value="">Day</option>
-                        </select>
+                      <input class="w-full border p-3 rounded-md" type="date" wire:model="end_date" min="{{ $start_date }}">
                     </div>
+
+                    <div>
+                       <Label>Jumlah Orang</Label>
+                        <input class="w-full border p-3 rounded-md" type="number" name="" wire:model="guest">
+                    </div>
+
+                    <div>
+                      <Label>Jumlah Hari</Label>
+                       <input class="w-full border p-3 rounded-md" type="number" name="" wire:model="qty" readonly>
+                   </div>                   
+
                  </div>
-                 <a class="px-8 py-3 bg-[#29af61] block max-w-md mx-auto text-center mt-7 text-white font-semibold rounded-md" href="{{ route('checkout') }}">Booking Sekarang</a>  
+                 <a class="px-8 py-3 bg-[#29af61] block max-w-md mx-auto text-center mt-7 text-white font-semibold rounded-md" href="{{ route('booking', $hotel['slug'] ) }}?start_date={{ $start_date }}&&end_date={{ $end_date }}&&qty={{ $qty }}&&guest={{ $guest }}">Booking Sekarang</a>  
             </div>
             @if($hotel['info'])
             <div class="rounded-lg border  p-5 mt-3">
