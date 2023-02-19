@@ -34,6 +34,8 @@ Route::middleware(['auth-api'])->group(function(){
 
 });
 
+Route::view('/themes/order', 'themes.order');
+
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
