@@ -60,12 +60,12 @@
             </button>
           </div>
         </div>
-        <div class="grid grid-cols-[auto_60px] mt-7 font-semibold py-6 border-y">
+        <div class="grid grid-cols-[auto_60px] mt-7 font-semibold py-6 border-y hidden">
           <div>
-            <p class="text-lg ">Hotel Dikeloa Oleh KeyPayRoom</p>
+            <p class="text-lg ">{{ $hotel['branch']['name'] }}</p>
             <p class="text-green-700 text-sm"><i class="fa-solid fa-circle"></i> Sedang Online</p>
           </div>
-          <div class="flex justify-end">
+          <div class="flex justify-end hidden">
             <img class="w-14 h-14 rounded-full" src="https://static.mamikos.com/uploads/cache/data/user/2021-03-17/fEnpmoiw-240x320.jpg" alt="">
           </div>
         </div>

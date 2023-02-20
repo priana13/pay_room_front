@@ -6,9 +6,9 @@
 
 @include('layouts.navbar2')
 
-<div class="container mx-auto mt-5">
+<div class="container mx-auto mt-5">  
 
-  <livewire:booking.booking-hotel />
+  <livewire:booking.booking-hotel :data="$data" />
 
 </div>
 {{-- container --}}

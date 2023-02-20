@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MyDashboardController;
 use App\Http\Controllers\ProfileController;
@@ -34,7 +35,7 @@ Route::middleware(['auth-api'])->group(function(){
 
 });
 
-Route::view('/booking/{slug}/form', 'booking.order')->name('booking');
+Route::get('/booking/{slug}/form', [BookingController::class, 'show'])->name('booking');
 Route::view('/booking/payment', 'booking.payment')->name('payment');
 Route::view('/booking/thankyou', 'booking.thankyou')->name('thankyou');
 

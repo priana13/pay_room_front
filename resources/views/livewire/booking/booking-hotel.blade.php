@@ -37,13 +37,9 @@
                 <label class="label">
                   <span class="label-text">Kewarga Negaraan</span>                     
                 </label>
-                <select class="select select-bordered select-lg">
-                  <option disabled selected>Pick one</option>
-                  <option>Star Wars</option>
-                  <option>Harry Potter</option>
-                  <option>Lord of the Rings</option>
-                  <option>Planet of the Apes</option>
-                  <option>Star Trek</option>
+                <select class="select select-bordered select-lg" wire:model="warga_negara">
+                  <option selected value="wni">Indonesia</option>
+                  <option value="wna">Warna Negara Asing</option>                  
                 </select>
                
               </div>
@@ -65,9 +61,10 @@
               <div class="bg-[url('https://demo.keypayroom.co.id/storage/sample.jpg')] w-[60px] h-[60px] rounded-md">
                 tes
               </div>
+              
               <div>
-                  <h2 class="card-title">New movie is released!</h2>
-                  <p>Click the button to watch on Jetflix app.</p>
+                  <h2 class="card-title">{{ $hotel['title'] }}</h2>
+                  <p>{{ $hotel['address'] }}</p>
               </div>                
             
           </div>             
@@ -79,17 +76,17 @@
             <div class="grid grid-cols-3 p-2">
               <div>
                 <span class="font-bold">Mendaftar </span> <br>
-                <span>Sab 4 Jan</span>
+                <span>{{ $data['start_date'] }}</span>
               </div>
               
               <div>
                 <span class="font-bold">Sampai </span> <br>
-                <span>Ming 5 Jan</span>
+                <span>{{ $data['end_date'] }}</span>
               </div>
 
               <div>
-                <span class="font-bold">Kamar </span> <br>
-                <span>1</span>
+                <span class="font-bold">Hari </span> <br>
+                <span>{{ $data['qty'] }}</span>
               </div>
 
             </div>  
@@ -108,19 +105,13 @@
           {{-- Rincian --}}
 
           <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
-            <span class="col-span-3">Harga Kamar</span>
-            <span class="col-span-1">Rp. 500.876</span>
+            <span class="col-span-3">Biaya Kamar</span>
+            <span class="col-span-1">Rp. {{ number_format($hotel['price'],0,',','.')  }}</span>
           </div>
 
-          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3 hidden">
             <span class="col-span-3">Biaya Pajak & Layanan </span>
             <span class="col-span-1">Termasuk</span>
-          </div>
-
-
-          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
-            <span class="col-span-3">Diskon Khusus</span>
-            <span class="col-span-1">Rp. 9.8847</span>
           </div>
 
           <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
@@ -134,9 +125,19 @@
             <span class="col-span-1">Ya</span>
           </div>
 
+          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+            <span class="col-span-3">Total</span>
+            <span class="col-span-1 line-through">Rp. {{ number_format($total,0,',','.')  }}</span>
+          </div>
+
+          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+            <span class="col-span-3">Total Discount ({{ $hotel['discount'] }}%)</span>
+            <span class="col-span-1">Rp. {{ number_format($discount,0,',','.')  }}</span>
+          </div>
+
           <div class="px-4 mt-3">
 
-            <h2 class="text-lg">Jumlah yang Harus Dibayar: <strong>Rp. 600.090</strong></h2>
+            <h2 class="text-lg">Jumlah yang Harus Dibayar: <strong>Rp. {{ number_format($total_bayar,0,',','.')  }}</strong></h2>
           </div>
 
           <div class="px-4 mt-3 text-center">
