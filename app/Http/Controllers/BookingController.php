@@ -23,4 +23,9 @@ class BookingController extends Controller
         return view('booking.order', compact('data'));
 
     }
+
+    public function payment($id){
+
+        return view('booking.payment');
+    }
 }

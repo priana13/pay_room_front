@@ -2,8 +2,10 @@
 
 namespace App\Http\Livewire\Booking;
 
+use App\Models\TempBooking;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Redirect;
 
 class BookingHotel extends Component
 {
@@ -16,7 +18,7 @@ class BookingHotel extends Component
     public $name,
            $phone_number,
            $email,
-           $warga_negara;
+           $warga_negara = 'wni';
 
     public function mount($data){
 
@@ -40,5 +42,27 @@ class BookingHotel extends Component
 
 
         return view('livewire.booking.booking-hotel');
+    }
+
+    public function payment(){
+
+        $temp_booking = TempBooking::create([
+
+           "name" => $this->name,
+           "phone_number" => $this->phone_number,
+           "warga_negara" => $this->warga_negara,
+           "start_date" => $this->data['start_date'],
+           "end_date" => $this->data['end_date'],
+           "day_qty" => $this->data['qty'],
+           "room" => 1,
+           "guest" => $this->data['guest'],
+           "hotel_id" => $this->hotel['hotel_id'],
+           "slug" => $this->hotel['slug']
+        ]);
+
+        // redirect to Payment Page with temp_booking id
+
+        Redirect::to(route('payment', $temp_booking->id));
+      
     }
 }

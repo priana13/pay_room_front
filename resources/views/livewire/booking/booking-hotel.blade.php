@@ -141,7 +141,7 @@
           </div>
 
           <div class="px-4 mt-3 text-center">
-            <a class="btn btn-secondary" href="{{ route('payment') }}">Bayar Sekarang</a>
+            <button class="btn btn-secondary" wire:click.prevent="payment">Bayar Sekarang</button>
           </div>
 
 

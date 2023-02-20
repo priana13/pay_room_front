@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('warga_negara');
             $table->date('start_date');
             $table->date('end_date');
+            $table->integer('day_qty');
             $table->integer('room');
             $table->integer('guest');
             $table->integer('hotel_id');
