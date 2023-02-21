@@ -150,5 +150,52 @@
     {{-- col-span-4 --}}
 
 
+        <!-- TODO: Remove ".sandbox" from script src URL for production environment. Also input your client key in "data-client-key" -->
+        <script src="{{
+            !config('services.midtrans.isProduction') ? 'https://app.sandbox.midtrans.com/snap/snap.js' : 'https://app.midtrans.com/snap/snap.js' }}"
+            data-client-key="{{ config('services.midtrans.clientKey')
+        }}"></script>         
+        
+        <script type="text/javascript">  
+        
+                // window.Livewire.on('getSnap', function(data){
+
+                //     alert('oke');
+
+                // });
+                
+                window.addEventListener('getSnap', event => {
+
+                    const token  = event.detail.token;
+
+                    // SnapToken acquired from previous step
+                    snap.pay(token, {
+                    // Optional
+                    onSuccess: function(result){
+                        /* You may add your own js here, this is just example */ document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                    },
+                    // Optional
+                    onPending: function(result){
+                        /* You may add your own js here, this is just example */ document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                    },
+                    // Optional
+                    onError: function(result){
+                        /* You may add your own js here, this is just example */ document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                    }
+                    }); 
+
+
+                   
+                })
+
+
+    
+
+         
+            
+        </script>
+    
+
+
 </div>
 {{-- grid --}}

@@ -13,6 +13,8 @@ class BookingPayment extends Component
     public $discount;
     public $total, $total_bayar;
 
+    public $data_booking;
+
     public function mount($temp_booking){
 
         $this->booking  = $temp_booking;
@@ -74,11 +76,17 @@ class BookingPayment extends Component
             'Accept' => 'application/json'           
         ])->post($url . '/booking', $data);
 
-        $response = $response->collect();     
+        $response = $response->collect();  
+        
+        $this->data_booking = $response;
 
-        // $data_booking = collect($response['data']);
+        // dd($this->data_booking['payment_token']);
 
-        Redirect::to(route('thankyou'));   
+        // $this->emit('getSnap',$this->data_booking['payment_token']);
+
+        $this->dispatchBrowserEvent('getSnap', ['token' => $this->data_booking['payment_token'] ]);
+
+        // Redirect::to(route('thankyou'));   
 
 
     }
