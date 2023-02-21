@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TempBooking;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -24,8 +25,10 @@ class BookingController extends Controller
 
     }
 
-    public function payment($id){
+    public function payment($temp_code){
 
-        return view('booking.payment');
+        $temp_booking = TempBooking::where('temp_code', $temp_code)->first();
+
+        return view('booking.payment', compact('temp_booking'));
     }
 }

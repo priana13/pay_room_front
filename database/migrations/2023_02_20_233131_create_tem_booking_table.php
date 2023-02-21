@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('temp_booking', function (Blueprint $table) {
             $table->id();
+            $table->string('temp_code');
             $table->string('name');
             $table->string('phone_number');
             $table->string('warga_negara');
@@ -37,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tem_booking');
+        Schema::dropIfExists('temp_booking');
     }
 };

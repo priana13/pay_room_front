@@ -47,7 +47,7 @@ class BookingHotel extends Component
     public function payment(){
 
         $temp_booking = TempBooking::create([
-
+           "temp_code" => uniqid(),
            "name" => $this->name,
            "phone_number" => $this->phone_number,
            "warga_negara" => $this->warga_negara,
@@ -62,7 +62,7 @@ class BookingHotel extends Component
 
         // redirect to Payment Page with temp_booking id
 
-        Redirect::to(route('payment', $temp_booking->id));
+        Redirect::to(route('payment', $temp_booking->temp_code));
       
     }
 }
