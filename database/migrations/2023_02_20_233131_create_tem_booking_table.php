@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('temp_code');
             $table->string('name');
             $table->string('phone_number');
+            $table->string('email');
             $table->string('warga_negara');
             $table->date('start_date');
             $table->date('end_date');

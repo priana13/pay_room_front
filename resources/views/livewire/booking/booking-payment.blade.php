@@ -20,26 +20,38 @@
             </div>
            
         </div>
-       
-        <div class="card bg-base-100 shadow-md p-5 w-full my-2">                    
-            <div class="flex flex-row justify-item-center content-center">
-                <div class="basis-1/4">                            
-                    <img src="https://images.reddoorz.com/payment_methods/137/BCA_new-1n.png" class="w-[50px]" alt="">
-                </div>
-                <div class="basis-1/2">Bank BCA</div>
-                <div class="basis-1/4 text-right"><i class="fa-solid fa-chevron-right"></i></div>
-            </div>               
-        </div>
 
-        <div class="card bg-base-100 shadow-md p-5 w-full my-2">                    
-            <div class="flex flex-row justify-item-center content-center">
-                <div class="basis-1/4">                            
-                    <img src="https://images.reddoorz.com/payment_methods/4/1.png" class="w-[50px]" alt="">
-                </div>
-                <div class="basis-1/2">Bank Mandiri</div>
-                <div class="basis-1/4 text-right"><i class="fa-solid fa-chevron-right"></i></div>
-            </div>               
-        </div>
+        <a href="#" wire:click.prevent="pay('bca')">
+
+            <div class="card bg-base-100 shadow-md p-5 w-full my-2">                    
+                <div class="flex flex-row justify-item-center content-center">
+                    <div class="basis-1/4">                            
+                        <img src="https://images.reddoorz.com/payment_methods/137/BCA_new-1n.png" class="w-[50px]" alt="">
+                    </div>
+                    <div class="basis-1/2">Bank BCA</div>
+                    <div class="basis-1/4 text-right"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>               
+            </div>
+
+        </a>    
+        
+        
+        <a href="#" wire:click.prevent="pay('mandiri')">
+
+            <div class="card bg-base-100 shadow-md p-5 w-full my-2">                    
+                <div class="flex flex-row justify-item-center content-center">
+                    <div class="basis-1/4">                            
+                        <img src="https://images.reddoorz.com/payment_methods/4/1.png" class="w-[50px]" alt="">
+                    </div>
+                    <div class="basis-1/2">Bank Mandiri</div>
+                    <div class="basis-1/4 text-right"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>               
+            </div>
+
+        </a> 
+
+
+
 
     </div>
         <!-- ... -->

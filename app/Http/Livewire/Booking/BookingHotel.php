@@ -49,6 +49,7 @@ class BookingHotel extends Component
         $temp_booking = TempBooking::create([
            "temp_code" => uniqid(),
            "name" => $this->name,
+           "email" => $this->email,
            "phone_number" => $this->phone_number,
            "warga_negara" => $this->warga_negara,
            "start_date" => $this->data['start_date'],

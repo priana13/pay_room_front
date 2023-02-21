@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Booking;
 
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Redirect;
 
 class BookingPayment extends Component
 {
@@ -49,5 +50,36 @@ class BookingPayment extends Component
 
 
         return view('livewire.booking.booking-payment');
+    }
+
+    public function pay($bank){
+
+        // create order and get midtrans token
+
+        $url = config('services.api_url'); 
+        
+        $data = [
+            "payment_method" => 1,
+            "qty" => 1,
+            "hotel_id" => $this->hotel['hotel_id'],
+            "checkin" => $this->booking->start_date,
+            "checkout" => $this->booking->end_date,
+            "email" => $this->booking->email,
+            "name" =>  $this->booking->name,
+            "phone_number"  => $this->booking->phone_number
+
+        ]; 
+
+        $response = Http::withHeaders([
+            'Accept' => 'application/json'           
+        ])->post($url . '/booking', $data);
+
+        $response = $response->collect();     
+
+        // $data_booking = collect($response['data']);
+
+        Redirect::to(route('thankyou'));   
+
+
     }
 }
