@@ -63,7 +63,31 @@ class BookingHotel extends Component
 
         // redirect to Payment Page with temp_booking id
 
-        Redirect::to(route('payment', $temp_booking->temp_code));
+        $url = config('services.api_url'); 
+        
+        $data = [
+            "payment_method" => 1,
+            "qty" => 1,
+            "hotel_id" => $temp_booking->hotel_id,
+            "checkin" => $temp_booking->start_date,
+            "checkout" => $temp_booking->end_date,
+            "email" => $temp_booking->email,
+            "name" =>  $temp_booking->name,
+            "phone_number"  => $temp_booking->phone_number
+
+        ]; 
+
+        $response = Http::withHeaders([
+            'Accept' => 'application/json'           
+        ])->post($url . '/booking', $data);
+
+        $response = $response->collect();
+
+        $temp_booking->payment_token = $response['payment_token'];
+        $temp_booking->transaction_code = $response['order']['transaction_code'];
+        $temp_booking->save();      
+
+        Redirect::to(route('invoice', $temp_booking->temp_code));
       
     }
 }

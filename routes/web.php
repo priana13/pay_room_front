@@ -37,7 +37,7 @@ Route::middleware(['auth-api'])->group(function(){
 
 Route::get('/booking/{slug}/form', [BookingController::class, 'show'])->name('booking');
 Route::get('/booking/payment/{temp_code}', [BookingController::class, 'payment'])->name('payment');
-Route::view('/booking/thankyou', 'booking.thankyou')->name('thankyou');
+Route::get('/booking/invoice/{temp_code}', [BookingController::class, 'invoice'])->name('invoice');
 
 
 

@@ -141,7 +141,7 @@
           </div>
 
           <div class="px-4 mt-3 text-center">
-            <button class="btn btn-secondary" wire:click.prevent="payment">Bayar Sekarang</button>
+            <button class="btn btn-primary" wire:click.prevent="payment">Bayar Sekarang</button>
           </div>
 
 

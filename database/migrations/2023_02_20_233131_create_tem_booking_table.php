@@ -28,6 +28,7 @@ return new class extends Migration
             $table->integer('hotel_id');
             $table->string('slug');
             $table->string('transaction_code')->nullable();
+            $table->string('payment_token')->nullable();
             $table->timestamps();
         });
     }

@@ -31,4 +31,11 @@ class BookingController extends Controller
 
         return view('booking.payment', compact('temp_booking'));
     }
+
+    public function invoice($temp_code){
+
+        $temp_booking = TempBooking::where('temp_code', $temp_code)->first();
+
+        return view('booking.invoice', compact('temp_booking'));
+    }
 }

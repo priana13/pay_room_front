@@ -4,9 +4,8 @@ namespace App\Http\Livewire\Booking;
 
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Redirect;
 
-class BookingPayment extends Component
+class BookingInvoice extends Component
 {
     public $booking;
     public $hotel;
@@ -17,25 +16,12 @@ class BookingPayment extends Component
 
     public function mount($temp_booking){
 
-        $this->booking  = $temp_booking;
+        $this->booking  = $temp_booking;   
 
     }
+
     public function render()
     {
-        // dd($this->booking);
-
-        // "temp_code" => "63f4e6a2d5342"
-        // "name" => "Priana Saputra"
-        // "phone_number" => "+6289504932111"
-        // "warga_negara" => "wni"
-        // "start_date" => "2023-02-21"
-        // "end_date" => "2023-02-21"
-        // "day_qty" => 1
-        // "room" => 1
-        // "guest" => 1
-        // "hotel_id" => 3
-        // "slug" => "voluptatibus-aut-quod-quibusdam-et-beatae"
-        // "transaction_code" => null
 
         $url = config('services.api_url');       
 
@@ -51,10 +37,11 @@ class BookingPayment extends Component
         $this->discount = ($this->hotel['discount'] / 100 ) * $this->total;
 
 
-        return view('livewire.booking.booking-payment');
+        return view('livewire.booking.booking-invoice');
     }
 
-    // public function pay($bank){
+
+     // public function pay($bank){
 
     //     // create order and get midtrans token
 
@@ -90,4 +77,5 @@ class BookingPayment extends Component
 
 
     // }
+
 }
