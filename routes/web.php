@@ -40,6 +40,13 @@ Route::get('/booking/payment/{temp_code}', [BookingController::class, 'payment']
 Route::get('/booking/invoice/{temp_code}', [BookingController::class, 'invoice'])->name('invoice');
 
 
+Route::get('/page/{slug}',function($slug){
+
+   return view('front.page.single-page');
+
+});
+
+
 
 
 // Route::get('/dashboard', function () {
