@@ -42,7 +42,7 @@
 
             @if(isset($this->hotel[1]) )
             <div class="flex lg:justify-end mt-2">
-              <a href="" class="py-1.5 px-3 border rounded-md ">
+              <a href="{{ route('cari-hotel') }}" class="py-1.5 px-3 border rounded-md ">
                 Lihat Semua
               </a>
               <p class="text-3xl text-gray-300 mb-2 mx-4">|</p>
