@@ -42,9 +42,9 @@ Route::get('/booking/invoice/{temp_code}', [BookingController::class, 'invoice']
 
 Route::get('/page/{slug}',function($slug){
 
-   return view('front.page.single-page');
+   return view('front.page.single-page', compact('slug'));
 
-});
+})->name('static-page');
 
 
 

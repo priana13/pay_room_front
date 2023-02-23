@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    @include('layouts.navbar1')
+    @include('layouts.navbar')
 
     <div id="sch-top-mobile" class="py-2 px-2 bg-white z-30 sticky top-0 hidden">
       <button id="" class="text-sm text-gray-400 p-3 text-left w-full shadow-costum1 rounded-md cari-btn sticky top-[45.5px] bg-white ">

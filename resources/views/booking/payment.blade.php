@@ -4,7 +4,7 @@
 
 @section('content')
 
-@include('layouts.navbar2')
+@include('layouts.navbar')
 
 <div class="container mx-auto mt-5">
 

@@ -9,7 +9,7 @@
 @endsection
 @section('content')
 
-  @include('template.component.navbar2')
+  @include('template.component.navbar')
   <div class="sticky top-0 z-30 grid grid-cols-[40px_auto_70px] py-3 px-2 bg-white lg:hidden shadow-lg">
     <div>
       <button class="text-xl">

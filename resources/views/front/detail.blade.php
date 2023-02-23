@@ -64,7 +64,7 @@
 @endsection
 @section('content')
 
-@include('layouts.navbar2')
+@include('layouts.navbar')
 
 @livewire('hotel.detail-hotel', [
   'slug' => $slug

@@ -8,16 +8,16 @@
 @endsection
 @section('content')
 
-  @include('layouts.navbar2')
+  @include('layouts.navbar')
 
   <div class="max-w-6xl mx-auto px-2">
 
-    @livewire('page.static-page')    
+    @livewire('page.static-page', [
+      'slug' => $slug
+    ])    
 
 
   </div>
-
-
  
   <br>
 

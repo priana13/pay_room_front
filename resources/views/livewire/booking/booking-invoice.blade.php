@@ -21,15 +21,14 @@
                         <img src="#" class="w-[50px]" alt="">
                         <h2 class="text-xl mx-4">Bank - </h2>
 
-                    </div>                       
-                    
+                    </div>                      
 
                     <div class="card card-bordered p-3">
 
                         <div class="grid grid-cols-3 p-2">
                         <div>
                             <span class="font-bold">Virtual Account </span> <br>
-                            <span>-</span>
+                            <span>{{ $data_order['va_number'] }}</span>
                         </div>
                         
                         <div>

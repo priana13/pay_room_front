@@ -21,8 +21,8 @@
                
                 </div>
                 <div>
-                <p class="mt-3"><a href="">Tentang Kami</a></p>
-                <p class="mt-3"><a href="">Job KeyPayRoom</a></p>               
+                <p class="mt-3"><a href="{{ route('static-page', 'about') }}">Tentang Kami</a></p>
+                {{-- <p class="mt-3"><a href="">Job KeyPayRoom</a></p>                --}}
                 </div>
             </div>
             <a href=""></a>
@@ -30,8 +30,8 @@
         <div>
             <p class="text-lg font-semibold">Kebijakan</p>
             <p class="mt-3"></p>
-            <p class="mt-3"><a href="">Kebijakan Privasi</a></p>
-            <p class="mt-3"><a href="">Syarat dan Ketentuan Umum</a></p>
+            <p class="mt-3"><a href="{{ route('static-page', 'kebijakan-privacy') }}">Kebijakan Privasi</a></p>
+            <p class="mt-3"><a href="{{ route('static-page', 'syarat-dan-ketentuan') }}">Syarat dan Ketentuan Umum</a></p>
         </div>
         <div>
             <p class="text-lg font-semibold">Hubungi Kami</p>
