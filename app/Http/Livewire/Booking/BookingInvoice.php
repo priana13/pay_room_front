@@ -13,6 +13,7 @@ class BookingInvoice extends Component
     public $total, $total_bayar;
 
     public $data_booking;
+    public $data_order;
 
     public function mount($temp_booking){
 
@@ -23,12 +24,15 @@ class BookingInvoice extends Component
     public function render()
     {
 
-        $url = config('services.api_url');       
-
+        $url = config('services.api_url');
         $response = Http::get($url . '/house/' . $this->booking->slug);
         $response = $response->collect();
-
         $this->hotel = collect($response['data']);
+
+        
+        $order = Http::get($url . '/booking/' . $this->booking->transaction_code);
+        $order = $order->collect();
+        $this->data_order = collect($order['data']); 
 
         $this->total = $this->hotel['price'] * $this->booking->day_qty;
 
