@@ -35,16 +35,22 @@
       </div>      
 
       {{-- list product --}}
-      @livewire('product.list-product')
+      @livewire('product.list-product', [
+        'title' => 'Hotel'
+      ])
 
       {{-- testimoni --}}
       @livewire('review-component')
 
       {{-- list product --}}
-      @livewire('product.list-product')
+      @livewire('product.list-product', [
+        'title' => 'Apartel'
+      ])
 
       {{-- list product --}}
-      @livewire('product.list-product')
+      @livewire('product.list-product', [
+        'title' => 'Rumtel'
+      ])
 
 
       <div class="mt-5">

@@ -1,44 +1,16 @@
 <div class="mt-14">
           <!-- Swiper card 1 -->
-          <div class="grid lg:grid-cols-[38%_0%_7%_21%_34%]">
+          <div class="flex justify-between">
             <div class="mt-2">
-              <a class="text-2xl font-semibold">Promo Ngebut</a>&nbsp;
+              <a class="text-2xl font-semibold">{{ $title }}</a>&nbsp;
               <select class="text-2xl focus:outline-none text-[#29af61] font-semibold border-b-2 select" name="" id="">
                 <option value="">Semua Kota</option>
                 <option value="">Jakata Selatan</option>
                 <option value="">Bogor </option>
               </select>
             </div>
-            <div></div>
-            <div class="mt-2">
-              <p class="text-xs text-gray-400 font-semibold mt-1">Akan Berakhir
-                dalam waktu:
-              </p>
-            </div>
-            <div class="bg-[#f6f6f6] lg:ml-2 p-[8px] flex mt-2">
-              <div class="flex">
-                <div class="bg-white font-semibold text-sm py-1 px-2">
-                  25 Hari
-                </div>
-              </div>
-              <div class="flex ml-3">
-                <div class="bg-white font-semibold text-sm py-1 px-3">
-                  21
-                </div>
-                <p class="mx-1">:</p>
-              </div>
-              <div class="flex ">
-                <div class="bg-white font-semibold text-sm py-1 px-3">
-                  31
-                </div>
-                <p class="mx-1">:</p>
-              </div>
-              <div class="flex ">
-                <div class="bg-white font-semibold text-sm py-1 px-3">
-                  41
-                </div>
-              </div>
-            </div>
+            <div></div>            
+          
 
             @if(isset($this->hotel[1]) )
             <div class="flex lg:justify-end mt-2">
@@ -58,11 +30,11 @@
           <div class="swiper mySwiper-card ">
             <div class="swiper-wrapper ">
               <div class="swiper-slide">
-                <div class="grid lg:grid-cols-4 grid-cols-2 text-center gap-2 mt-3">
+                <div class="grid lg:grid-cols-4 grid-cols-2 text-center gap-4 mt-3">
 
                 @foreach ($page_1 as $item)                   
 
-                    <button class="text-left mx-auto"  onclick="location.href='{{ route('front.hotel' , $item['slug'])  }}'">
+                    <button class="card shadow-md p-5 rounded-md text-left mx-auto"  onclick="location.href='{{ route('front.hotel' , $item['slug'])  }}'">
                         <div class="font-semibold max-w-[265px]">
                          
                         @if($item['thumbnail'] != null)

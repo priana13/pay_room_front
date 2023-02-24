@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 class ListProduct extends Component
 {
     public $hotel;
-    public $title;
+    public $title = "Hotel Terbaru";
 
     public $page_1 = [];
     public $page_2 = [];
