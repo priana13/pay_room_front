@@ -72,7 +72,7 @@
 
             @foreach ($hotel as $item)
 
-                <button class="text-left mx-auto"  onclick="location.href='#'">
+                <button class="text-left mx-auto"  onclick="location.href='{{ route('front.hotel', $item['slug']) }}'">
                     <div class="font-semibold max-w-[265px]">
                     <img class="w-[265px] h-[150px] rounded-xl object-cover" src="https://static.mamikos.com/uploads/cache/data/style/2022-12-29/CqqT0kpm-360x480.jpg" alt="">
                     <div class="mt-3">      
