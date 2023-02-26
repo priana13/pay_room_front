@@ -83,6 +83,13 @@
 
         <livewire:hotel.fasilitas-hotel :slug="$hotel['slug']" />
 
+        @if($hotel['maps'])
+
+        <p class="text-xl font-bold text-[#383746] mt-5 mb-2">Location</p> 
+        {!! $hotel['maps'] !!}
+
+        @endif
+
         <div class="mt-7 border-t hidden">
           <p class="text-xl font-bold text-[#383746] mt-5">Ketentuan pengajuan sewa</p>
           <p class="text-md font-semibold text-[#383746] mt-5">Bisa bayar DP (uang muka) dulu</p>
@@ -163,6 +170,8 @@
 
 
     <livewire:hotel.list-hotel-footer />
+
+
     
     
   <section id="bottom-navigation" class="fixed inset-x-0 -bottom-[1px] z-10 bg-white shadow-costum1 rounded-t-2xl py-3 pr-4 lg:hidden">
