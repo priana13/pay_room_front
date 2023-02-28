@@ -16,7 +16,9 @@
     <div style="background-image: url(./img/demo/bg_hero_section_top.png);" class="bg h-[270px] max-w-6xl mx-auto  bg-no-repeat bg-cover p-5">
       <p class="text-3xl font-bold  pt-11 text-[#484848]">Cari Tempat Menginap?</p>
       <p class="text-xl text-gray-500">Dapatkan infonya dan langsung booking sekarang juga</p>
-      <button id="sch-bottom" class="mt-5 text-sm text-gray-400 p-3 text-left w-80 shadow-costum1 rounded-md cari-btn">
+      <button id="sch-bottom" class="mt-5 text-sm text-gray-400 p-3 text-left w-80 shadow-costum1 rounded-md cari-btn2"
+      onclick="location.href='{{ route('cari-hotel')  }}'"
+      >
         <i class="fa-solid fa-magnifying-glass"></i> Masukan nama lokasi/area/alamat
       </button>
       <div id="move-search"></div>

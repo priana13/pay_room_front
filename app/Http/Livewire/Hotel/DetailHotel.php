@@ -22,6 +22,8 @@ class DetailHotel extends Component
            $guest,
            $total;
 
+    public $gallery;
+
     public function mount($slug){
         $this->slug = $slug;
         $this->start_date = date('Y-m-d');
@@ -47,6 +49,13 @@ class DetailHotel extends Component
         $this->qty = ($selisih / 60 / 60 / 24) + 1;
 
         $this->total = $this->hotel['price_discount'] * $this->qty;
+
+        // Gallery Hotel
+
+        $gallery_response = Http::get($url . '/house/' . $this->slug . '/gallery');
+        $gallery_response = $gallery_response->collect();
+
+        $this->gallery = $gallery_response->pluck('url');
 
         return view('livewire.hotel.detail-hotel');
     }

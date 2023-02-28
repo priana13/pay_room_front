@@ -24,7 +24,7 @@
         </button>
       </div>
       <div class="max-w-7xl mx-auto px-2">
-        <div class="p-5 shadow-costum1 sm:grid grid-cols-5 gap-5 top-16 lg:top-28  -mt-14 bg-white rounded-md">
+        <div class="p-5 shadow-costum1 sm:grid grid-cols-4 gap-5 top-16 lg:top-28  -mt-14 bg-white rounded-md">
           <div>
             <p class="font-semibold text-sm">Pilih Kota</p>
             <select name="" id="" class="select select-bordered rounded-[4px] focus:outline-none w-full" wire:model="kota">
@@ -36,7 +36,7 @@
              
             </select>
           </div>
-          <div class="hidden lg:block">
+          <div class="hidden">
             <p class="font-semibold text-sm">Tipe Hotel</p>
             <select name=""  class="select select-bordered rounded-[4px] focus:outline-none w-full" wire:model="tipe_hotel">
               <option value='' selected='true'>Semua</option>

@@ -25,9 +25,18 @@
       <div>
         <img class="object-cover w-full lg:h-[430px] rounded-lg lg:rounded-l-lg" src="{{ $hotel['thumbnail'] }}" alt="">
       </div>
+      
       <div class="hidden lg:block">
-        <img class="object-cover w-full h-[210px] rounded-tr-lg" src="{{ $hotel['thumbnail'] }}" alt="">
-        <img class="object-cover w-full h-[210px] rounded-br-lg mt-2" src="{{ $hotel['thumbnail'] }}" alt="">
+
+        <?php 
+          (isset($gallery[0]))?$gallery1 = $gallery[0]: $gallery1 = $hotel['thumbnail'];
+          (isset($gallery[1]))?$gallery2 = $gallery[1]: $gallery2 = $hotel['thumbnail'];
+        ?>  
+
+        <img class="object-cover w-full h-[210px] rounded-tr-lg" src="{{ $gallery1 }}" alt="">
+        <img class="object-cover w-full h-[210px] rounded-br-lg mt-2" src="{{ $gallery2 }}" alt="">
+
+
       </div>
     </div>
     <div class="grid lg:grid-cols-[65%_35%] gap-2 ">
@@ -37,10 +46,19 @@
             <i class="fa-solid fa-image"></i>
             <p class="text-sm font-semibold">Foto</p> 
           </button>
-          <button class=" rounded-lg border-2 py-2.5 w-28 ml-3">
+
+          @if($hotel['video'])
+          
+          <button class=" rounded-lg border-2 py-2.5 w-28 ml-3"
+          onclick="window.open('{{ $hotel['video'] }}',
+            '_blank'
+          );"
+          >
             <i class="fa-solid fa-video"></i>
             <p class="text-sm font-semibold">Video</p> 
           </button>
+          @endif
+
         </div>
         <p class="text-2xl font-bold text-[#383746] my-5">{{ $hotel['title'] }}</p>
         <div class="lg:flex grid grid-cols-[30%_60%]">
@@ -52,7 +70,7 @@
         <div class="grid grid-cols-2 mt-4">
           <p class="mt-1"><i class="fa-solid fa-door-open"></i> Tersisa <a class="text-red-500"> {{ $hotel['room_qty'] }} Kamar</a></p>
           <div class="flex justify-end">
-            <button class="border rounded-lg px-3 py-1">
+            <button class="border rounded-lg px-3 py-1 hidden">
               <i class="fa-regular fa-heart"></i> Simpan
             </button>
             <button class="border rounded-lg ml-2 px-3 py-1">
