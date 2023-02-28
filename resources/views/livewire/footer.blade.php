@@ -28,7 +28,7 @@
             <p class="text-lg font-semibold">Kebijakan</p>
             <p class="mt-3"></p>
             <p class="mt-3"><a href="{{ route('static-page', 'kebijakan-privacy') }}">Kebijakan Privasi</a></p>
-            <p class="mt-3"><a href="{{ route('static-page', 'syarat-dan-ketentuan') }}">Syarat dan Ketentuan Umum</a></p>
+            <p class="mt-3"><a href="{{ route('static-page', 'syarat-dan-ketentuan') }}">Syarat dan Ketentuan</a></p>
         </div>
         <div>
             <p class="text-lg font-semibold">Hubungi Kami</p>

@@ -7,7 +7,7 @@
           <a href="https://app.keypayroom.co.id/admin/login"><i class="fa-solid fa-user"></i>&nbsp;  Admin</a>
         </div>
         <div class="text-right">
-          <a><i class="fa-solid fa-phone"></i>&nbsp; Contact Us: +021 4449 xxx</a>
+          <a><i class="fa-solid fa-phone"></i>&nbsp; Contact Us: +62819-73777-789</a>
         </div>
       </div>
     </div>
@@ -15,7 +15,9 @@
       <div class="grid grid-cols-2 px-2 max-w-6xl mx-auto text-sm  text-gray-500">
         <div class="py-3.5 flex">
           <a href="{{ route('front.home_page') }}"><img src="{{asset('storage/icon/logo_payRoom.png')}}" class="w-[80px] lg:mt-2" alt=""></a>
-          <button id="sch-top"  class="hidden ml-10 text-sm text-gray-400 p-3 text-left w-80 shadow-costum1 rounded-md cari-btn">
+          <button id="sch-top"  class="hidden ml-10 text-sm text-gray-400 p-3 text-left w-80 shadow-costum1 rounded-md cari-btn2"
+          onclick="location.href='{{ route('cari-hotel')  }}'"
+          >
             <i class="fa-solid fa-magnifying-glass"></i> Masukan nama lokasi/area/alamat
           </button>
         </div>

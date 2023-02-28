@@ -35,5 +35,5 @@
           <div class="swiper-button-prev-testimoni"><i class="fa-solid fa-chevron-left"></i></div>
           <div class="swiper-button-next-testimoni"><i class="fa-solid fa-chevron-right"></i></div>
         </div>
-        <a class="px-8 py-3 bg-[#cc6505] block max-w-md mx-auto text-center mt-5 text-white font-semibold rounded-md" href="">Booking Hotel Sekarang</a>  
+        <a class="px-8 py-3 bg-[#cc6505] block max-w-md mx-auto text-center mt-5 text-white font-semibold rounded-md" href="{{ route('cari-hotel') }}">Booking Hotel Sekarang</a>  
       </div>

@@ -109,11 +109,11 @@
     <div class="bg-gray-100 p-7 mt-8">
       <h3 class="text-2xl font-semibold mb-3">Pesan Hotel Murah di Indonesia</h3> <br>
       <p class="columns-1">
-        KeyPayRoom - Aplikasi Anak hotel No. 1 di Indonesia <br>
+        Key Pay Room adalah perusahaan penyewaan hotel yang berkomitmen untuk memberikan pengalaman menginap yang nyaman dan menyenangkan bagi pelanggan kami. <br>
 
-        KeyPayRoom memanfaatkan teknologi untuk berkembang dari aplikasi cari hotel menjadi aplikasi yang memudahkan calon anak hotel untuk booking properti hotel dan juga melakukan pembayaran hotel. Saat ini kami memiliki lebih dari 2 juta kamar hotel yang tersebar di lebih dari 140 kota di seluruh Indonesia. KeyPayRoom juga menyediakan layanan manajemen properti, bernama Singgahsini dan Apik, untuk menjawab kebutuhan calon penghuni yang menginginkan hotel eksklusif atau hotel murah. KeyPayRoom berusaha untuk bisa terus menyajikan daftar rumah hotel dengan data ketersediaan kamar yang akurat, fasilitas hotel terperinci, dilengkapi dengan foto serta detail harga hotel, dan kemudahan survei via fitur virtual tour agar calon penghuni mendapatkan kenyamanan dalam proses pencarian dan booking hotel. <br>
+        Kami memahami betapa pentingnya tempat menginap yang nyaman selama bepergian atau liburan, dan itulah mengapa kami selalu berusaha untuk memberikan pelayanan terbaik kepada pelanggan kami. Kami bekerja sama dengan hotel-hotel terbaik di berbagai destinasi, dan memilih hanya yang terbaik dari yang terbaik untuk memastikan kenyamanan dan kepuasan pelanggan kami.<br>
 
-        Untuk memberikan perlindungan bagi para anak hotel selama pandemi, KeyPayRoom menghadirkan hotel Higienis. hotel Higienis merupakan hotel dengan konsep yang menerapkan pelaksanaan standar protokol kesehatan, seperti disinfeksi kamar, jaga jarak, penggunaan masker, dan swab antigen untuk kamu saat akan mulai ngehotel nanti.
+        Terima kasih telah memilih Key Pay Room sebagai pilihan Anda untuk kebutuhan menginap Anda. Kami berharap dapat memberikan pengalaman menginap yang luar biasa bagi Anda di masa depan. Silakan hubungi kami jika Anda memiliki pertanyaan atau permintaan khusus.
 
 
       </p>
