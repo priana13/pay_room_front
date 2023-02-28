@@ -1,6 +1,6 @@
 <div class="mt-14">
           <!-- Swiper card 1 -->
-          <div class="flex justify-between">
+          <div class="">
             <div class="mt-2">
               <a class="text-2xl font-semibold">{{ $title }}</a>&nbsp;
               <select class="text-2xl focus:outline-none text-[#29af61] font-semibold border-b-2 select" name="" id="">
@@ -39,11 +39,11 @@
                          
                         @if($item['thumbnail'] != null)
 
-                        <img class="w-[265px] h-[150px] rounded-xl object-cover" src="{{ $item['thumbnail'] }}" alt="">
+                        <img class="w-[265px] h-[150px] rounded-md object-cover" src="{{ $item['thumbnail'] }}" alt="">
 
                         @else
 
-                        <img class="w-[265px] h-[150px] rounded-xl object-cover" src="{{ asset('storage/sample.jpg') }}" alt="">
+                        <img class="w-[265px] h-[150px] rounded-md object-cover" src="{{ asset('storage/sample.jpg') }}" alt="">
 
                         @endif
 
@@ -53,19 +53,17 @@
                         </div>
                         <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
                             {{ $item['title'] }}
-                        </p>
-                        <p class="line-clamp-1 text-sm mt-1 ">
-                            Wonocolo Surabaya
-                        </p>
+                        </p>                       
+                       
                         <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                            K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
+                           {{$item['kota']}}
                         </p>
                         <div class="text-sm mt-1">
                             <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> {{ number_format($item['discount'],0,',','.') }}%</a>
                             <a class="text-gray-400 line-through">Rp{{ number_format($item['price'],0,',','.') }}</a>
                         </div>
                         <div class="text-[#303030]">
-                        <a >Rp{{ number_format($item['price_discount'],0,',','.') }}</a><a class="text-sm">/ bulan</a> 
+                        <a >Rp{{ number_format($item['price_discount'],0,',','.') }}</a><a class="text-sm">/day</a> 
                         </div>
                         </div>
                     </button>
@@ -100,19 +98,16 @@
                     </div>
                     <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
                         {{ $item['title'] }}
-                    </p>
-                    <p class="line-clamp-1 text-sm mt-1 ">
-                        Wonocolo Surabaya
-                    </p>
+                    </p>                   
                     <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                        K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
+                      {{$item['kota']}}
                     </p>
                     <div class="text-sm mt-1">
                         <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> {{ number_format($item['discount'],0,',','.') }}%</a>
                         <a class="text-gray-400 line-through">Rp{{ number_format($item['price'],0,',','.') }}</a>
                     </div>
                     <div class="text-[#303030]">
-                    <a >Rp{{ number_format($item['price_discount'],0,',','.') }}</a><a class="text-sm">/ bulan</a> 
+                    <a >Rp{{ number_format($item['price_discount'],0,',','.') }}</a><a class="text-sm">/ day</a> 
                     </div>
                     </div>
                 </button>
