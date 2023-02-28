@@ -22,7 +22,7 @@ class DetailHotel extends Component
            $guest,
            $total;
 
-    public $gallery;
+    public $gallery;   
 
     public function mount($slug){
         $this->slug = $slug;
@@ -57,7 +57,17 @@ class DetailHotel extends Component
 
         $this->gallery = $gallery_response->pluck('url');
 
-        return view('livewire.hotel.detail-hotel');
+
+        $shareComponen = \Share::page(
+            url()->current(),
+            'Your share text comes here',
+        )
+        ->facebook()
+        ->twitter()
+        ->telegram()
+        ->whatsapp();
+
+        return view('livewire.hotel.detail-hotel', compact('shareComponen'));
     }
 
     public function selengkapnya(){

@@ -1,5 +1,25 @@
 <div>
 
+  <style>
+      div#social-links {
+          margin: 0 auto;
+          max-width: 500px;
+      }
+      div#social-links ul li {
+          display: inline-block;
+      }          
+      div#social-links ul li a {
+          padding: 5px;
+          border: 1px solid #ccc;
+          margin: 1px;
+          font-size: 30px;
+          color: rgb(2, 172, 93);
+          background-color: #ccc;
+          border-radius: 4px;
+      }
+  </style>
+
+
   <div class="sticky top-0 z-30 grid grid-cols-[40px_auto_70px] py-3 px-2 bg-white lg:hidden shadow-lg">
     <div>
       <button class="text-xl">
@@ -73,11 +93,23 @@
             <button class="border rounded-lg px-3 py-1 hidden">
               <i class="fa-regular fa-heart"></i> Simpan
             </button>
-            <button class="border rounded-lg ml-2 px-3 py-1">
-              <i class="fa-solid fa-share-nodes"></i> Bagikan
-            </button>
+          
+            <p class="mr-2">Bagikan:</p> 
+
+            <div class="">
+              {!! $shareComponen !!}
+            </div>                 
+
+           
+
           </div>
+
+                 
+
         </div>
+
+          
+
         <div class="grid grid-cols-[auto_60px] mt-7 font-semibold py-6 border-y hidden">
           <div>
             <p class="text-lg ">{{ $hotel['branch']['name'] }}</p>
@@ -96,8 +128,7 @@
              {!! $desc !!}
             <br>
             <button id="lihat_cerita" class="underline mt-1" wire:click="selengkapnya">{{ $label }}</button>
-          </div>
-               
+          </div>        
 
         <livewire:hotel.fasilitas-hotel :slug="$hotel['slug']" />
 
