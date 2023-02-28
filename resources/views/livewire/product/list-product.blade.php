@@ -32,7 +32,8 @@
               <div class="swiper-slide">
                 <div class="grid lg:grid-cols-4 grid-cols-2 text-center gap-4 mt-3">
 
-                @foreach ($page_1 as $item)                   
+                @foreach ($page_1 as $item)                 
+              
 
                     <button class="card shadow-md p-5 rounded-md text-left mx-auto"  onclick="location.href='{{ route('front.hotel' , $item['slug'])  }}'">
                         <div class="font-semibold max-w-[265px]">
@@ -49,14 +50,14 @@
 
                         <div class="mt-3">      
                             <a class="py-1 px-2 text-sm border rounded-md ">{{ $item['bed'] }}</a>&nbsp;
-                            <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
+                            <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa {{ $item['room_qty'] }} Kamar</a>
                         </div>
                         <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
                             {{ $item['title'] }}
                         </p>                       
                        
-                        <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                           {{$item['kota']}}
+                        <p class="line-clamp-1 text-xs mt-1 text-gray-400 capitalize">
+                           {{ strtolower($item['kota'])}}
                         </p>
                         <div class="text-sm mt-1">
                             <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> {{ number_format($item['discount'],0,',','.') }}%</a>
@@ -94,12 +95,12 @@
 
                     <div class="mt-3">      
                         <a class="py-1 px-2 text-sm border rounded-md ">{{ $item['bed'] }}</a>&nbsp;
-                        <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa 4 Kamar</a>
+                        <a class="p-1 text-xs  rounded-md text-[#da3438] italic">Sisa {{ $item['room_qty'] }} Kamar</a>
                     </div>
                     <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
                         {{ $item['title'] }}
                     </p>                   
-                    <p class="line-clamp-1 text-xs mt-1 text-gray-400">
+                    <p class="line-clamp-1 text-xs mt-1 text-gray-400 capitalize">
                       {{$item['kota']}}
                     </p>
                     <div class="text-sm mt-1">

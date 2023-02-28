@@ -1,4 +1,4 @@
-<div id="footer" class="max-w-6xl mx-auto">
+<div id="footer" class="max-w-6xl mx-auto p-3">
     <div class="grid lg:grid-cols-[28%_34%_20%_18%] gap-5 px-2">
         <div>
             <a href=""><img src="{{asset('storage/icon/logo_payRoom.png')}}" class="w-[125px]" alt=""></a>
