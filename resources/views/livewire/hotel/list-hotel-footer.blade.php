@@ -46,11 +46,9 @@
                         <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
                             {{ $item['title'] }}
                         </p>
-                        <p class="line-clamp-1 text-sm mt-1 ">
-                            {{ $item['kota'] }}
-                        </p>
-                        <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                            K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
+                       
+                        <p class="line-clamp-1 text-xs mt-1 text-gray-400 capitalize">
+                            {{ strtolower($item['kota'])}}
                         </p>
                         <div class="text-sm mt-1">
                             <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> {{ number_format($item['discount'],0,',','.') }}%</a>
@@ -82,11 +80,9 @@
                     <p class="line-clamp-1 text-sm mt-3 text-[#303030]">
                         {{ $item['title'] }}
                     </p>
-                    <p class="line-clamp-1 text-sm mt-1 ">
-                        {{ $item['kota'] }}
-                    </p>
-                    <p class="line-clamp-1 text-xs mt-1 text-gray-400">
-                        K. Mandi Dalam ·WiFi ·AC ·Kloset Duduk ·Kasur Televisi
+                   
+                    <p class="line-clamp-1 text-xs mt-1 text-gray-400 capitalize">
+                        {{ strtolower($item['kota'])}}
                     </p>
                     <div class="text-sm mt-1">
                         <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> {{ number_format($item['discount'],0,',','.') }}%</a>

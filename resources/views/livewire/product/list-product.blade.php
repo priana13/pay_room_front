@@ -101,7 +101,7 @@
                         {{ $item['title'] }}
                     </p>                   
                     <p class="line-clamp-1 text-xs mt-1 text-gray-400 capitalize">
-                      {{$item['kota']}}
+                      {{ strtolower($item['kota'])}}
                     </p>
                     <div class="text-sm mt-1">
                         <a class=" text-red-600"><i class="fa-solid fa-bolt"></i> {{ number_format($item['discount'],0,',','.') }}%</a>
