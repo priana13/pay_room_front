@@ -29,17 +29,14 @@
               </button>
           </div>
           <div class="px-3 mt-2">
-            <a class=" py-3 rounded-md text-md block text-left" href="">Cari Kos</a>
-            <a class=" py-3 rounded-md text-md block text-left" href="">Cari Apartemen</a>
-            <a class=" py-5  rounded-md text-md block text-left border-y" href="">Promosikan klan Anda</a>
-            <a class=" py-3 rounded-md text-md block text-left" href="">Download Aplikasi</a>
-            <a class=" py-3 rounded-md text-md block text-left" href="">Pusat Bantuan</a>
-            <a class=" py-3 rounded-md text-md block text-left" href="">Blog</a>
-            <a class=" py-3 rounded-md text-md block text-left border-b" href="">Syarat Dan Ketentuan</a>
+            <a class=" py-3 rounded-md text-md block text-left" href="{{ route('front.home_page') }}">Home</a>
+            <a class=" py-3 rounded-md text-md block text-left" href="{{ route('cari-hotel') }}">Booking</a>
+            <a class=" py-3 rounded-md text-md block text-left" href="{{ route('static-page', 'contact') }}">Pusat Bantuan</a>           
+            <a class=" py-3 rounded-md text-md block text-left border-b" href="{{ route('static-page', 'syarat-dan-ketentuan') }}">Syarat Dan Ketentuan</a>
             <p class="mt-4"></p>
-            <a class="text-white py-2 rounded-sm text-md block text-center bg-[#1baa56]" href="">Masuk sebagai Pemilik</a>
+            <a class="text-white py-2 rounded-sm text-md block text-center bg-[#1baa56]" href="{{ route('login') }}">Login</a>
             <p class="mt-4"></p>
-            <a class="text-[#1baa56] py-2 rounded-sm text-md block text-center border border-[#1baa56]" href="">Masuk sebagai Pencari</a>
+            <a class="text-[#1baa56] py-2 rounded-sm text-md block text-center border border-[#1baa56]" href="{{ route('register') }}">Register</a>
 
           </div>
       </div> 

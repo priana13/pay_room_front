@@ -22,7 +22,7 @@
 
   <div class="sticky top-0 z-30 grid grid-cols-[40px_auto_70px] py-3 px-2 bg-white lg:hidden shadow-lg">
     <div>
-      <button class="text-xl">
+      <button class="text-xl" onclick="location.href='{{ route('front.home_page') }}'">
         <i class="fa-solid fa-arrow-left"></i>
       </button>
     </div>
@@ -30,9 +30,7 @@
         {{ $hotel['title'] }}
     </div>
     <div class="text-right text-xl">
-      <button>
-        <i class="fa-solid fa-heart"></i>
-      </button>&emsp;
+     
       <button>
         <i class="fa-solid fa-share-nodes"></i>
       </button>
