@@ -87,20 +87,15 @@
           <p class=" px-2 py-1 font-semibold ml-3"><i class="fa-solid fa-star"></i> 4.8 <a class="font-medium text-gray-400">(10)</a></p>
           <p class=" px-2 py-1 text-gray-500 ml-3"><i class="fa-solid fa-money-bill"></i> {{ $hotel['branch']['name'] }}</p>
         </div>
-        <div class="grid grid-cols-2 mt-4">
+        <div class="grid grid-cols-1 md:grid-col-2 mt-4">
           <p class="mt-1"><i class="fa-solid fa-door-open"></i> Tersisa <a class="text-red-500"> {{ $hotel['room_qty'] }} Kamar</a></p>
-          <div class="flex justify-end">
-            <button class="border rounded-lg px-3 py-1 hidden">
-              <i class="fa-regular fa-heart"></i> Simpan
-            </button>
+          <div class="flex justify-end">          
           
             <p class="mr-2">Bagikan:</p> 
 
             <div class="">
               {!! $shareComponen !!}
-            </div>                 
-
-           
+            </div> 
 
           </div>
 
@@ -116,7 +111,7 @@
             <p class="text-green-700 text-sm"><i class="fa-solid fa-circle"></i> Sedang Online</p>
           </div>
           <div class="flex justify-end hidden">
-            <img class="w-14 h-14 rounded-full" src="https://static.mamikos.com/uploads/cache/data/user/2021-03-17/fEnpmoiw-240x320.jpg" alt="">
+            <img class="w-14 h-14 rounded-full" src="#" alt="">
           </div>
         </div>
 
@@ -135,7 +130,15 @@
         @if($hotel['maps'])
 
         <p class="text-xl font-bold text-[#383746] mt-5 mb-2">Location</p> 
-        {!! $hotel['maps'] !!}
+
+        <div class="relative w-full h-[300px] overflow-auto">
+            
+
+            <div class="absolute w-full h-full">
+              {!! $hotel['maps'] !!}
+            </div>
+            
+        </div>        
 
         @endif
 
@@ -230,11 +233,22 @@
         {{-- <p class="font-semibold text-green-500">Lihat Estimasi Pembayaran</p> --}}
         <p class="text-gray-400 line-through">Rp{{ number_format($hotel['price'],0,',','.') }}</p>
       </div>
-      <button class="p-3 border rounded-md font-semibold right-2 absolute bg-[#29af61] text-white">
+      <a class="p-3 border rounded-md font-semibold right-2 absolute bg-[#29af61] text-white"
+      href="{{ route('booking', $hotel['slug'] ) }}?start_date={{ $start_date }}&&end_date={{ $end_date }}&&qty={{ $qty }}&&guest={{ $guest }}"
+      >
         Booking Sekarang
-      </button>
+      </a>
     </div>
   </section>
+
+
+  <script>
+
+if (window.frameElement) {
+  let answer = "YES";
+}
+   
+  </script>
 
 
     {{-- To attain knowledge, add things every day; To attain wisdom, subtract things every day. --}}

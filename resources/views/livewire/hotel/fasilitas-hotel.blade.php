@@ -1,9 +1,9 @@
-<div>
+<div class="pl-2">
     
 
     @forelse($category as $row)
 
-    <div class="mt-7">
+    <div class="mt-7 pl-2">
         <p class="text-xl font-bold text-[#383746]">{{ $row['name'] }}</p>
         <p class="text-gray-400 text-sm mt-1">{{ $row['desc'] }}</p>
 
