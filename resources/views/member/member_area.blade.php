@@ -8,7 +8,7 @@
 @endsection
 @section('content')
 
-  @include('template.component.navbar2')
+  @include('template.component.navbar')
   <div class="max-w-6xl mx-auto px-2">
       <div class="grid lg:grid-cols-[30%_80%] sm:grid-cols-none">
             <div>

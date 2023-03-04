@@ -3,7 +3,7 @@
 
 @endsection
 @section('content')
-  @include('layouts.navbar1')
+  @include('layouts.navbar')
   <br>
  
   <livewire:auth.login-component />

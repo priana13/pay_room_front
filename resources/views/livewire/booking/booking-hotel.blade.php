@@ -60,7 +60,7 @@
         <div class="card-body">
           
           <div class="flex gap-2 my-2">
-              <div class="bg-[url('https://demo.keypayroom.co.id/storage/sample.jpg')] w-[150px] h-[60px] rounded-md">
+              <div class="bg-[url('https://demo.keypayroom.co.id/storage/sample.jpg')] w-[80px] h-[60px] rounded-md">
                 
               </div>
               
@@ -105,44 +105,44 @@
 
           {{-- Rincian --}}
 
-          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+          <div class="grid  grid-cols-5 content-end  gap-2 px-4 mt-3">
             <span class="col-span-3">Biaya Kamar</span>
-            <span class="col-span-1">Rp. {{ number_format($hotel['price'],0,',','.')  }}</span>
+            <span class="col-span-2">Rp. {{ number_format($hotel['price'],0,',','.')  }}</span>
           </div>
 
-          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3 hidden">
+          <div class="grid  grid-cols-5 content-end  gap-2 px-4 mt-3 hidden">
             <span class="col-span-3">Biaya Pajak & Layanan </span>
-            <span class="col-span-1">Termasuk</span>
+            <span class="col-span-2">Termasuk</span>
           </div>
 
-          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+          <div class="grid  grid-cols-5 content-end  gap-2 px-4 mt-3">
             <span class="col-span-3">Sarapan</span>
-            <span class="col-span-1">Tidak Termasuk</span>
+            <span class="col-span-2">Tidak Termasuk</span>
           </div>
 
 
-          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+          <div class="grid  grid-cols-5 content-end  gap-2 px-4 mt-3">
             <span class="col-span-3">Bisa Refund</span>
-            <span class="col-span-1">Ya</span>
+            <span class="col-span-2">Ya</span>
           </div>
 
-          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+          <div class="grid  grid-cols-5 content-end  gap-2 px-4 mt-3">
             <span class="col-span-3">Total</span>
-            <span class="col-span-1 line-through">Rp. {{ number_format($total,0,',','.')  }}</span>
+            <span class="col-span-2 line-through">Rp. {{ number_format($total,0,',','.')  }}</span>
           </div>
 
-          <div class="grid  grid-cols-4 content-end  gap-2 px-4 mt-3">
+          <div class="grid  grid-cols-5 content-end  gap-2 px-4 mt-3">
             <span class="col-span-3">Total Discount ({{ $hotel['discount'] }}%)</span>
-            <span class="col-span-1">Rp. {{ number_format($discount,0,',','.')  }}</span>
+            <span class="col-span-2">Rp. {{ number_format($discount,0,',','.')  }}</span>
           </div>
 
-          <div class="px-4 mt-3">
-
-            <h2 class="text-lg">Jumlah yang Harus Dibayar: <strong>Rp. {{ number_format($total_bayar,0,',','.')  }}</strong></h2>
-          </div>
+          <div class="grid  grid-cols-5 content-end  gap-2 px-4 mt-3">
+            <span class="col-span-3 font-bold">Total Bayar ({{ $hotel['discount'] }}%)</span>
+            <span class="col-span-2 font-bold">Rp. {{ number_format($total_bayar,0,',','.')  }}</span>
+          </div>         
 
           <div class="px-4 mt-3 text-center">
-            <button class="btn btn-primary" wire:click.prevent="payment">Bayar Sekarang</button>
+            <button class="btn bg-primary" wire:click.prevent="payment">Bayar Sekarang</button>
           </div>
 
 
