@@ -2,11 +2,11 @@
 
     <div class="col-span-6 px-4">
 
-        <div class="alert shadow-md mb-3">
+        <div class="alert shadow-md mb-3 rounded-md">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <div>
-                <h3 class="font-bold">Masuk/Daftar untuk Mendapatkan Promo Spesial</h3>                    
+                <h3 class="font-bold text-center">Masuk/Daftar untuk Mendapatkan Promo Spesial</h3>                    
               </div>
             </div>
             <div class="flex-none">
@@ -21,23 +21,24 @@
               <label for="label">
                 <span class="label-text">Name</span>
               </label>
-              <input type="text" placeholder="Name" wire:model="name" class="input w-full shadow-sm input-bordered input-lg" />
+              <input type="text" placeholder="Name" wire:model="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />            
+        
              
               <label for="label">
                 <span class="label-text">Email</span>
               </label>
-              <input type="text" placeholder="Email" wire:model="email" class="input w-full shadow-sm input-bordered input-lg " />
+              <input type="text" placeholder="Email" wire:model="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
 
               <label for="label">
                 <span class="label-text">Phone Number</span>
               </label>
-              <input type="text" placeholder="Phone Number" wire:model="phone_number" class="input w-full shadow-sm input-bordered input-lg " />
+              <input type="text" placeholder="Phone Number" wire:model="phone_number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
 
               <div class="form-control w-full">
                 <label class="label">
                   <span class="label-text">Kewarga Negaraan</span>                     
                 </label>
-                <select class="select select-bordered select-lg" wire:model="warga_negara">
+                <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" wire:model="warga_negara">
                   <option selected value="wni">Indonesia</option>
                   <option value="wna">Warna Negara Asing</option>                  
                 </select>
@@ -53,13 +54,14 @@
     <div class="col-span-4">
 
 
-      <div class="card card-side bg-base-100 shadow-md">
+      <div class="card card-side bg-base-100 shadow-md w-full relative">
        
         {{-- hotel  --}}
         <div class="card-body">
-          <div class="grid grid-flow-col auto-cols-max gap-2 my-2">
-              <div class="bg-[url('https://demo.keypayroom.co.id/storage/sample.jpg')] w-[60px] h-[60px] rounded-md">
-                tes
+          
+          <div class="flex gap-2 my-2">
+              <div class="bg-[url('https://demo.keypayroom.co.id/storage/sample.jpg')] w-[150px] h-[60px] rounded-md">
+                
               </div>
               
               <div>
@@ -67,8 +69,7 @@
                   <p>{{ $hotel['address'] }}</p>
               </div>                
             
-          </div>             
-
+          </div>
           
 
           <div class="card card-bordered p-3">
